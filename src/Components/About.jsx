@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../Theme';
 import AdPlaceholder from './AdPlaceholders';
+import Footer from './Footer';
 
 export default function AboutPage() {
     const { theme } = useContext(ThemeContext);
@@ -112,6 +113,8 @@ export default function AboutPage() {
                         Start Calculating Now
                     </a>
                 </div>
+
+                <Footer />
 
             </div>
         </div>

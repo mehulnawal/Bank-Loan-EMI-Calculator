@@ -88,6 +88,15 @@ export default function Footer() {
                                     About Us
                                 </a>
                             </li>
+
+                            <li>
+                                <a
+                                    href="/categories"
+                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
+                                >
+                                    Categories
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
