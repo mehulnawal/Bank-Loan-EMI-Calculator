@@ -2,9 +2,16 @@ import { useContext } from 'react';
 import { ThemeContext } from '../Theme';
 import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
+import Breadcrumb from './Breadcrumb';
 
 export default function AboutPage() {
     const { theme } = useContext(ThemeContext);
+
+    const paths = [
+        { label: "Home", href: "/" },
+        { label: "About", href: "/about" }
+    ];
+
     return (
         <div className={`${theme === 'light' ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900' : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'} min-h-screen flex flex-col items-center`}>
 
@@ -14,6 +21,8 @@ export default function AboutPage() {
                 <div className="w-full text-center">
                     <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">What We Are?</h1>
                 </div>
+
+                <Breadcrumb paths={paths} />
 
                 <AdPlaceholder />
 

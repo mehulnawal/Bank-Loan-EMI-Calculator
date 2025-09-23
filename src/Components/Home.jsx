@@ -2,9 +2,15 @@ import { useContext } from 'react';
 import { ThemeContext } from '../Theme';
 import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
+import Breadcrumb from './Breadcrumb';
 
 export default function HomePage() {
     const { theme } = useContext(ThemeContext);
+
+    const paths = [
+        { label: "Home", href: "/" },
+    ];
+
     return (
         <div className={`${theme === 'light' ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900' : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'} min-h-screen flex flex-col items-center px-2 sm:px-4`}>
             <div className="w-full max-w-lg sm:max-w-md rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center space-y-8">
@@ -12,6 +18,8 @@ export default function HomePage() {
                 <div className="text-2xl sm:text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
                     Bank Loan EMI Calculator
                 </div>
+
+                <Breadcrumb paths={paths} />
 
                 <AdPlaceholder />
 

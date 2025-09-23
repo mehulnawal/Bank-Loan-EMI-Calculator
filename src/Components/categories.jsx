@@ -7,9 +7,16 @@ import loan from '../assets/loan.png'
 import home from '../assets/home.png'
 import car from '../assets/car.png'
 import gst from '../assets/gst.png'
+import Breadcrumb from './Breadcrumb';
 
 export default function Categories() {
     const { theme } = useContext(ThemeContext);
+
+    const paths = [
+        { label: "Home", href: "/" },
+        { label: "Categories", href: "/categories" },
+    ];
+
     return (
         <div
             className={`${theme === 'light'
@@ -18,12 +25,17 @@ export default function Categories() {
                 } min-h-screen flex flex-col items-center`}
         >
             <div className="max-w-3xl w-full rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-6 py-8 flex flex-col items-center space-y-8">
+
                 {/* Heading */}
                 <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5 mb-6">
                     <div className="text-2xl font-bold text-purple-800 dark:text-purple-300">
                         Banking Loan Calculator
                     </div>
                 </div>
+
+                <Breadcrumb paths={paths} />
+
+                <AdPlaceholder />
 
                 {/* Intro */}
                 <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center max-w-2xl">
