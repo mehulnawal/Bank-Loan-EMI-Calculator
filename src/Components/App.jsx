@@ -3,16 +3,18 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import HomePage from './Home';
 import ContactPage from './Contact';
+import CarLoanCalculator from './CarLoanCalculator';
 
 export default function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Navbar />}>
-            <Route index element={<HomePage />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Route>
+          {/* <Route path="/" element={<Navbar />}> */}
+          <Route index element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/carLoan" element={<CarLoanCalculator />} />
+          {/* </Route> */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
