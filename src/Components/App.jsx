@@ -11,7 +11,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route index element={<HomePage />} />
-            <Route path="contact" element={<ContactPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Route>
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
