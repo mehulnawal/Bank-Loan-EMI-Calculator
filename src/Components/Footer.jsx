@@ -70,27 +70,29 @@ export default function Footer() {
                             Information
                         </h3>
                         <ul className="space-y-2">
+
                             <li>
                                 <a
-                                    href="/about-us"
+                                    href="/"
+                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
+                                >
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="/aboutUs"
                                     className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
                                 >
                                     About Us
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="/contact-us"
-                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
-                                >
-                                    Contact Us
                                 </a>
                             </li>
                         </ul>
                     </div>
 
                     {/* Terms And Policy Section */}
-                    <div>
+                    {/* <div>
                         <h3 className={`font-semibold text-lg mb-4 ${theme === 'light' ? 'text-gray-800' : 'text-gray-200'}`}>
                             Terms And Policy
                         </h3>
@@ -136,7 +138,7 @@ export default function Footer() {
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

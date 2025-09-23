@@ -1,0 +1,92 @@
+1. Use <Link> from react-router-dom instead of <a>.
+import { Link } from 'react-router-dom';
+
+<li>
+  <Link
+    to="/"
+    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
+  >
+    Home
+  </Link>
+</li>
+
+
+
+2. Add a small hook that refreshes AdSense on every route change:
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+export default function AdsRefresher() {
+  const location = useLocation();
+
+  useEffect(() => {
+    try {
+      if (window.adsbygoogle && process.env.NODE_ENV === "production") {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      }
+    } catch (e) {
+      console.log("AdSense error", e);
+    }
+  }, [location.pathname]);
+
+  return null;
+}
+
+
+3.Use it inside your App:
+export default function App() {
+  return (
+    <ThemeProvider>
+      <BrowserRouter>
+        <AdsRefresher />
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/carLoan" element={<CarLoanCalculator />} />
+          <Route path="/aboutUs" element={<AboutPage />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
+}
+
+
+
+adplaceholder.jsx
+
+import { useContext, useEffect } from "react";
+import { ThemeContext } from "../Theme";
+
+export default function AdPlaceholder() {
+    const { theme } = useContext(ThemeContext);
+
+    useEffect(() => {
+        try {
+            if (window.adsbygoogle) {
+                (window.adsbygoogle = window.adsbygoogle || []).push({});
+            }
+        } catch (e) {
+            console.log("AdSense error:", e);
+        }
+    }, []);
+
+    return (
+        <div className="container mx-auto px-4 py-2">
+            <ins
+                className={`adsbygoogle block w-full h-16 border rounded flex justify-center items-center select-none 
+          ${theme === "light"
+                        ? "bg-gray-100 border-gray-400 text-gray-500"
+                        : "bg-gray-800 border-gray-600 text-gray-400"
+                    }`}
+                style={{ display: "block" }}
+                data-ad-client="ca-pub-xxxxxxxxxx"  // client will replace
+                data-ad-slot="1234567890"           // client will replace
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+            />
+        </div>
+    );
+}

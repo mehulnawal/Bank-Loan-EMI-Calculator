@@ -1,19 +1,6 @@
 import { useContext } from 'react';
-
-// Mock AdPlaceholder component
-function AdPlaceholder() {
-    return (
-        <div className="w-full max-w-md mx-auto mb-6">
-            <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg p-4 text-white text-center shadow-lg">
-                <div className="text-sm font-medium">Advertisement</div>
-                <div className="text-xs mt-1 opacity-75">Premium Financial Tools Available</div>
-            </div>
-        </div>
-    );
-}
-
-// Mock ThemeContext
-const ThemeContext = { theme: 'dark' };
+import { ThemeContext } from '../Theme';
+import AdPlaceholder from './AdPlaceholders';
 
 export default function AboutPage() {
     const { theme } = useContext(ThemeContext);
@@ -119,7 +106,7 @@ export default function AboutPage() {
                 {/* CTA Button */}
                 <div className="w-full text-center">
                     <a
-                        href="/"
+                        href="/categories"
                         className="bg-purple-600 hover:bg-purple-700 text-white font-medium px-8 py-3 rounded-lg shadow transition inline-block"
                     >
                         Start Calculating Now
