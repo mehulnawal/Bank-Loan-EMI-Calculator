@@ -20,9 +20,9 @@ export default function Navbar() {
                         <a href="/" className={linkClass}>
                             Home
                         </a>
-                        <a href="/contact" className={linkClass}>
+                        {/* <a href="/contact" className={linkClass}>
                             Contact
-                        </a>
+                        </a> */}
 
                         <button
                             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
