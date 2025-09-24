@@ -58,6 +58,7 @@ export default function Footer() {
                     >
                         <Youtube className="w-5 h-5" />
                     </a>
+
                 </div>
 
                 {/* Footer Links */}
@@ -94,6 +95,42 @@ export default function Footer() {
                                     className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
                                 >
                                     Categories
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="/homeLoan"
+                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
+                                >
+                                    Home Loan Calculator
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="/carLoan"
+                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
+                                >
+                                    Car Loan Calculator
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="/personalLoan"
+                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
+                                >
+                                    Personal Loan Calculator
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="/gstCalculator"
+                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
+                                >
+                                    GST Calculator
                                 </a>
                             </li>
                         </ul>
