@@ -21,46 +21,6 @@ export default function Footer() {
                 {/* Divider Line */}
                 <div className={`border-t ${theme === 'light' ? 'border-gray-200' : 'border-gray-600'} mb-8`}></div>
 
-                {/* Social Media Icons */}
-                <div className="flex justify-center space-x-4 mb-8">
-                    <a
-                        href="#"
-                        className={`${theme === 'light' ? 'bg-gray-400 hover:bg-gray-500' : 'bg-gray-600 hover:bg-gray-500'} text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors`}
-                        aria-label="Facebook"
-                    >
-                        <Facebook className="w-5 h-5" />
-                    </a>
-                    <a
-                        href="#"
-                        className={`${theme === 'light' ? 'bg-gray-400 hover:bg-gray-500' : 'bg-gray-600 hover:bg-gray-500'} text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors`}
-                        aria-label="Twitter"
-                    >
-                        <Twitter className="w-5 h-5" />
-                    </a>
-                    <a
-                        href="#"
-                        className={`${theme === 'light' ? 'bg-gray-400 hover:bg-gray-500' : 'bg-gray-600 hover:bg-gray-500'} text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors`}
-                        aria-label="Instagram"
-                    >
-                        <Instagram className="w-5 h-5" />
-                    </a>
-                    <a
-                        href="#"
-                        className={`${theme === 'light' ? 'bg-gray-400 hover:bg-gray-500' : 'bg-gray-600 hover:bg-gray-500'} text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors`}
-                        aria-label="Email"
-                    >
-                        <Mail className="w-5 h-5" />
-                    </a>
-                    <a
-                        href="#"
-                        className={`${theme === 'light' ? 'bg-gray-400 hover:bg-gray-500' : 'bg-gray-600 hover:bg-gray-500'} text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors`}
-                        aria-label="YouTube"
-                    >
-                        <Youtube className="w-5 h-5" />
-                    </a>
-
-                </div>
-
                 {/* Footer Links */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
 
