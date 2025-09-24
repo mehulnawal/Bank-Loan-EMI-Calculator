@@ -6,34 +6,38 @@ export default function AdPlaceholder() {
     const adRef = useRef(null);
 
     useEffect(() => {
-        // Delay to ensure the ad container is in the DOM
-        const timeout = setTimeout(() => {
+        // Push the ad once the element exists in the DOM
+        if (adRef.current) {
             try {
                 (window.adsbygoogle = window.adsbygoogle || []).push({});
                 console.log('Ad pushed to adsbygoogle');
             } catch (e) {
                 console.error('Adsense error', e);
             }
-        }, 500); // 0.5s delay
-
-        return () => clearTimeout(timeout);
+        }
     }, []);
 
     return (
         <div className="container mx-auto px-4 py-2">
-            {/* Google Test Ad */}
+            {/* Google AdSense */}
             <ins
                 ref={adRef}
-                className={`adsbygoogle block rounded border border-dashed select-none 
-          ${theme === 'light' ? 'bg-gray-100 border-gray-400 text-gray-500' : 'bg-gray-800 border-gray-600 text-gray-400'}`}
-                style={{ display: 'block', width: '100%', height: '90px' }}
-                data-ad-client="ca-pub-3940256099942544" // ✅ Test publisher ID
-                data-ad-slot="6300978111"               // ✅ Test slot ID for banner
+                className={`adsbygoogle block rounded select-none 
+          ${theme === 'light' ? 'bg-gray-100 border border-gray-400' : 'bg-gray-800 border border-gray-600'}`}
+                style={{
+                    display: 'block',
+                    width: '100%',
+                    maxWidth: '728px', // optional max width for desktop
+                    height: '90px',
+                    margin: '0 auto',   // center ad
+                }}
+                data-ad-client="ca-pub-XXXXXXXXXXXXXXX" // ✅ replace with your publisher ID
+                data-ad-slot="YYYYYYYYYY"               // ✅ replace with your ad slot ID
                 data-ad-format="auto"
                 data-full-width-responsive="true"
             ></ins>
 
-            {/* Fallback if ads don't load */}
+            {/* Fallback box for development or when ad fails to load */}
             <div
                 className={`w-full h-20 border border-dashed rounded flex justify-center items-center select-none mt-2
           ${theme === 'light' ? 'bg-gray-100 border-gray-400 text-gray-500' : 'bg-gray-800 border-gray-600 text-gray-400'}`}
