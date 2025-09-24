@@ -54,7 +54,7 @@ export default function Categories() {
 
                 {/* Features */}
                 <div className="w-full space-y-4">
-                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
                         🔹 Features of the Banking Calculator
                     </h2>
                     <ul className="list-disc text-left text-base leading-relaxed text-gray-700 dark:text-gray-200 pl-6 space-y-2">
@@ -70,14 +70,15 @@ export default function Categories() {
 
                 {/* Calculator Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mt-6">
+
                     {/* Personal Loan */}
                     <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow flex flex-col items-center text-center">
                         <img src={loan} alt="Personal Loan" className="w-12 h-12 mb-3" />
-                        <h3 className="text-lg font-semibold mb-2">Personal Loan Calculator</h3>
+                        <h3 className="text-xl font-semibold mb-2">Personal Loan Calculator</h3>
                         <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                             Calculate EMI and total repayment for your personal loan easily.
                         </p>
-                        <a href="/personal-loan" className="text-purple-600 font-medium hover:underline">
+                        <a href="/personalLoan" className="text-purple-600 font-medium hover:underline">
                             Try Now →
                         </a>
                     </div>
@@ -85,11 +86,11 @@ export default function Categories() {
                     {/* Home Loan */}
                     <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow flex flex-col items-center text-center">
                         <img src={home} alt="Home Loan" className="w-12 h-12 mb-3" />
-                        <h3 className="text-lg font-semibold mb-2">Home Loan Calculator</h3>
+                        <h3 className="text-xl font-semibold mb-2">Home Loan Calculator</h3>
                         <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                             Estimate EMIs, interest, and total cost for your home loan.
                         </p>
-                        <a href="/home-loan" className="text-purple-600 font-medium hover:underline">
+                        <a href="/homeLoan" className="text-purple-600 font-medium hover:underline">
                             Try Now →
                         </a>
                     </div>
@@ -97,11 +98,11 @@ export default function Categories() {
                     {/* Car Loan */}
                     <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow flex flex-col items-center text-center">
                         <img src={car} alt="Car Loan" className="w-12 h-12 mb-3" />
-                        <h3 className="text-lg font-semibold mb-2">Car Loan Calculator</h3>
+                        <h3 className="text-xl font-semibold mb-2">Car Loan Calculator</h3>
                         <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                             Quickly calculate EMIs and total repayment for your car loan.
                         </p>
-                        <a href="/car-loan" className="text-purple-600 font-medium hover:underline">
+                        <a href="/carLoan" className="text-purple-600 font-medium hover:underline">
                             Try Now →
                         </a>
                     </div>
@@ -109,11 +110,11 @@ export default function Categories() {
                     {/* GST */}
                     <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow flex flex-col items-center text-center">
                         <img src={gst} alt="GST Calculator" className="w-12 h-12 mb-3" />
-                        <h3 className="text-lg font-semibold mb-2">GST Calculator</h3>
+                        <h3 className="text-xl font-semibold mb-2">GST Calculator</h3>
                         <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                             Calculate GST, net prices, and tax amounts for products or services.
                         </p>
-                        <a href="/gst-calculator" className="text-purple-600 font-medium hover:underline">
+                        <a href="/gstCalculator" className="text-purple-600 font-medium hover:underline">
                             Try Now →
                         </a>
                     </div>

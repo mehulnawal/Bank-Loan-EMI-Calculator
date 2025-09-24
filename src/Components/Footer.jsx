@@ -11,9 +11,8 @@ export default function Footer() {
 
                 {/* Main Footer Text */}
                 <div className="text-center mb-8">
-                    <p className="text-sm leading-relaxed max-w-2xl mx-auto">
-                        suggestions, or just want to say hello, don't hesitate to contact us. Your input helps us make
-                        our tools better for you. Thank you for choosing Our Website. We're here to simplify your life and
+                    <p className="text-lg leading-relaxed max-w-2xl mx-auto">
+                        Thank you for choosing Our Website. We're here to simplify your life and
                         provide the tools you need to make informed decisions. Start using our calculators today, and
                         take control of your financial and personal journey.
                     </p>
@@ -74,7 +73,7 @@ export default function Footer() {
                             <li>
                                 <a
                                     href="/"
-                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
+                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
                                 >
                                     Home
                                 </a>
@@ -83,7 +82,7 @@ export default function Footer() {
                             <li>
                                 <a
                                     href="/aboutUs"
-                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
+                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
                                 >
                                     About Us
                                 </a>
@@ -92,7 +91,7 @@ export default function Footer() {
                             <li>
                                 <a
                                     href="/categories"
-                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
+                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
                                 >
                                     Categories
                                 </a>
