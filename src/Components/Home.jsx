@@ -40,7 +40,7 @@ export default function HomePage() {
                     </a>
                 </div>
 
-                {/* {/* <AdPlaceholder /> */} */
+                {/* {/* <AdPlaceholder /> */}
 
                 <div className="space-y-8 text-center sm:text-left">
                     <section>

@@ -34,7 +34,7 @@ export default function AboutPage() {
                     </p>
                 </div>
 
-                {/* {/* <AdPlaceholder /> */} */
+                {/* {/* <AdPlaceholder /> */}
 
                 <div className="w-full px-1">
                     <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center">

@@ -38,7 +38,7 @@ export default function Categories() {
 
                 <Breadcrumb paths={paths} />
 
-                {/* {/* <AdPlaceholder /> */} */
+                {/* {/* <AdPlaceholder /> */} 
 
                 {/* Intro */}
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200  max-w-2xl">
