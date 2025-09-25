@@ -34,6 +34,8 @@ export default function AboutPage() {
                     </p>
                 </div>
 
+                <AdPlaceholder />
+
                 <div className="w-full px-1">
                     <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center">
                         Dedicated to innovation and accuracy, our tools cater to a broad spectrum of financial needs, simplifying computations and enhancing financial literacy for individuals and professionals alike.

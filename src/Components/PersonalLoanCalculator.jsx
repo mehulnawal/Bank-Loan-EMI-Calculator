@@ -60,6 +60,7 @@ export default function PersonalLoan() {
 
                 <Breadcrumb paths={paths} />
 
+                <AdPlaceholder />
 
 
                 <div className="w-full space-y-6">

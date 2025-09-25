@@ -40,6 +40,8 @@ export default function HomePage() {
                     </a>
                 </div>
 
+                <AdPlaceholder />
+
                 <div className="space-y-8 text-center sm:text-left">
                     <section>
                         <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">

@@ -3,10 +3,10 @@ import { ThemeContext } from '../Theme';
 import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
 
-import loan from '../assets/loan.png'
-import home from '../assets/home.png'
-import car from '../assets/car.png'
-import gst from '../assets/gst.png'
+import loan from '../assets/loan.png';
+import home from '../assets/home.png';
+import car from '../assets/car.png';
+import gst from '../assets/gst.png';
 import Breadcrumb from './Breadcrumb';
 
 export default function Categories() {
@@ -28,9 +28,12 @@ export default function Categories() {
 
                 {/* Heading */}
                 <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5 mb-6">
-                    <div className="text-2xl font-bold text-purple-800 dark:text-purple-300">
-                        Banking Loan Calculator
-                    </div>
+                    <h1 className="text-3xl font-bold text-purple-900 dark:text-purple-300">
+                        Comprehensive Banking Loan Calculator Suite
+                    </h1>
+                    <p className="mt-2 max-w-xl mx-auto text-gray-700 dark:text-gray-300 text-base leading-relaxed">
+                        Leverage our suite of free, precisely engineered calculators designed to help you navigate complex financial considerations with ease. From loan EMIs to tax calculations, our tools empower you to plan strategically and confidently.
+                    </p>
                 </div>
 
                 <Breadcrumb paths={paths} />
@@ -39,15 +42,13 @@ export default function Categories() {
 
                 {/* Intro */}
                 <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center max-w-2xl">
-                    Supercharge your financial decision-making journey with our array of free calculators,
-                    tailored for loans, EMIs, and banking necessities.
+                    Seamlessly manage your financial decisions using our versatile calculators tailored for various banking needs, including loan repayments, interest computations, and savings plans.
                 </p>
                 <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center max-w-2xl">
-                    Our powerful banking calculator helps you make informed financial decisions—whether you're
-                    saving for a goal, applying for a loan, or planning investments.
+                    Whether assessing monthly installments for a new loan or calculating GST on purchases, our intuitive calculators provide accurate, real-time results designed to simplify your financial planning process.
                 </p>
                 <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center max-w-2xl">
-                    Easily estimate repayments, interest earnings, and savings growth in just a few clicks.
+                    Empower your budgeting and investment strategies with tools that offer precision and ease of use, supporting your goal to achieve financial clarity and success.
                 </p>
 
                 <AdPlaceholder />
@@ -55,14 +56,14 @@ export default function Categories() {
                 {/* Features */}
                 <div className="w-full space-y-4">
                     <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                        🔹 Features of the Banking Calculator
+                        Key Features of Our Calculators
                     </h2>
                     <ul className="list-disc text-left text-base leading-relaxed text-gray-700 dark:text-gray-200 pl-6 space-y-2">
-                        <li><b>Loan EMI Calculator</b> – Find out your monthly payments based on loan amount, interest rate, and tenure.</li>
-                        <li><b>Fixed Deposit Calculator</b> – Estimate your fixed deposit returns over time, including compound interest.</li>
-                        <li><b>Savings Goal Tracker</b> – Determine how much you need to save monthly to reach your target amount.</li>
-                        <li><b>Interest Rate Comparison</b> – Compare different banks' interest rates to find the best deal.</li>
-                        <li><b>Mortgage/Auto Loan Estimator</b> – Know your monthly cost before committing to a major purchase.</li>
+                        <li><strong>Loan EMI Calculator:</strong> Calculate monthly repayment amounts customized to your loan’s principal, interest rate, and tenure with precision.</li>
+                        <li><strong>Fixed Deposit Calculator:</strong> Project your investment growth over time, factoring in compound interest earnings.</li>
+                        <li><strong>Savings Goal Planner:</strong> Determine the monthly savings required to reach your financial objectives efficiently.</li>
+                        <li><strong>Interest Rate Comparator:</strong> Quickly compare and analyze different bank interest rates to maximize your returns.</li>
+                        <li><strong>Mortgage and Auto Loan Estimator:</strong> Evaluate your monthly financial obligations prior to committing to significant purchases.</li>
                     </ul>
                 </div>
 
@@ -72,57 +73,65 @@ export default function Categories() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mt-6">
 
                     {/* Personal Loan */}
-                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow flex flex-col items-center text-center">
-                        <img src={loan} alt="Personal Loan" className="w-12 h-12 mb-3" />
-                        <h3 className="text-xl font-semibold mb-2">Personal Loan Calculator</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                            Calculate EMI and total repayment for your personal loan easily.
+                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-lg">
+                        <img src={loan} alt="Personal Loan" className="w-16 h-16 mb-4" />
+                        <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
+                            Personal Loan Calculator
+                        </h3>
+                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6">
+                            Accurately compute your personal loan EMIs and total payable amount to optimize your repayment strategy and budget effectively.
                         </p>
-                        <a href="/personalLoan" className="text-purple-600 font-medium hover:underline">
+                        <a href="/personalLoan" className="text-purple-600 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>
 
                     {/* Home Loan */}
-                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow flex flex-col items-center text-center">
-                        <img src={home} alt="Home Loan" className="w-12 h-12 mb-3" />
-                        <h3 className="text-xl font-semibold mb-2">Home Loan Calculator</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                            Estimate EMIs, interest, and total cost for your home loan.
+                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-lg">
+                        <img src={home} alt="Home Loan" className="w-16 h-16 mb-4" />
+                        <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
+                            Home Loan Calculator
+                        </h3>
+                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6">
+                            Evaluate different home loan options, repayment tenures, and interest rates to plan for your ideal mortgage with confidence.
                         </p>
-                        <a href="/homeLoan" className="text-purple-600 font-medium hover:underline">
+                        <a href="/homeLoan" className="text-purple-600 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>
 
                     {/* Car Loan */}
-                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow flex flex-col items-center text-center">
-                        <img src={car} alt="Car Loan" className="w-12 h-12 mb-3" />
-                        <h3 className="text-xl font-semibold mb-2">Car Loan Calculator</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                            Quickly calculate EMIs and total repayment for your car loan.
+                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-lg">
+                        <img src={car} alt="Car Loan" className="w-16 h-16 mb-4" />
+                        <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
+                            Car Loan Calculator
+                        </h3>
+                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6">
+                            Compute your car loan EMIs precisely and assess total repayment to make informed choices for your vehicle financing.
                         </p>
-                        <a href="/carLoan" className="text-purple-600 font-medium hover:underline">
+                        <a href="/carLoan" className="text-purple-600 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>
 
                     {/* GST */}
-                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow flex flex-col items-center text-center">
-                        <img src={gst} alt="GST Calculator" className="w-12 h-12 mb-3" />
-                        <h3 className="text-xl font-semibold mb-2">GST Calculator</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                            Calculate GST, net prices, and tax amounts for products or services.
+                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-lg">
+                        <img src={gst} alt="GST Calculator" className="w-16 h-16 mb-4" />
+                        <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
+                            GST Calculator
+                        </h3>
+                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6">
+                            Simplify your GST-related calculations for goods and services, ensuring tax compliance while managing your finances efficiently.
                         </p>
-                        <a href="/gstCalculator" className="text-purple-600 font-medium hover:underline">
+                        <a href="/gstCalculator" className="text-purple-600 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>
                 </div>
-
 
                 <Footer />
             </div>
         </div>
     );
 }
+

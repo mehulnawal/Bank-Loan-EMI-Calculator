@@ -38,12 +38,11 @@ export default function AdPlaceholder() {
             ></ins>
 
             {/* Fallback box for development or when ad fails to load */}
-            <div
-                className={`w-full h-20 border border-dashed rounded flex justify-center items-center select-none mt-2
-          ${theme === 'light' ? 'bg-gray-100 border-gray-400 text-gray-500' : 'bg-gray-800 border-gray-600 text-gray-400'}`}
+            {/* <div
+                className={`w-full h-20 border border-dashed rounded flex justify-center items-center select-none mt-2 ${theme === 'light' ? 'bg-gray-100 border-gray-400 text-gray-500' : 'bg-gray-800 border-gray-600 text-gray-400'}`}
             >
                 Advertisement (Demo Preview)
-            </div>
+            </div> */}
         </div>
     );
 }

@@ -60,7 +60,7 @@ export default function HomeLoan() {
 
                 <Breadcrumb paths={paths} />
 
-
+                <AdPlaceholder />
 
                 <div className="w-full space-y-6">
                     <div className="relative">
