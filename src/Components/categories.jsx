@@ -41,13 +41,13 @@ export default function Categories() {
                 <AdPlaceholder />
 
                 {/* Intro */}
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center max-w-2xl">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200  max-w-2xl">
                     Seamlessly manage your financial decisions using our versatile calculators tailored for various banking needs, including loan repayments, interest computations, and savings plans.
                 </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center max-w-2xl">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200  max-w-2xl">
                     Whether assessing monthly installments for a new loan or calculating GST on purchases, our intuitive calculators provide accurate, real-time results designed to simplify your financial planning process.
                 </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center max-w-2xl">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200  max-w-2xl">
                     Empower your budgeting and investment strategies with tools that offer precision and ease of use, supporting your goal to achieve financial clarity and success.
                 </p>
 
