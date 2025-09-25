@@ -5,6 +5,11 @@ import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { Calculator, Home, User, Car, Percent } from 'lucide-react';
 
+import loan from '../assets/loan.png'
+import home from '../assets/home.png'
+import car from '../assets/car.png'
+import gst from '../assets/gst.png'
+
 export default function HomePage() {
     const { theme } = useContext(ThemeContext);
 
@@ -88,35 +93,44 @@ export default function HomePage() {
                     <h2 className="text-xl sm:text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">
                         Popular EMI Calculators
                     </h2>
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <a href="/categories/personalLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center text-center">
-                            <User className="w-10 h-10 text-purple-700 dark:text-purple-300 mb-3" />
-                            <h3 className="font-bold text-purple-700 dark:text-purple-300 mb-1">Personal Loan</h3>
-                            <p className="text-sm text-gray-700 dark:text-gray-200">
+
+                        {/* personal loan */}
+                        <div href="/categories/personalLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
+                            <img src={loan} alt="Personal Loan" className="w-12 h-12 mb-3" />
+                            <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Personal Loan</h3>
+                            <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
                                 Precisely calculate monthly instalments for personal loans, assisting you in budgeting and timely repayments.
                             </p>
-                        </a>
-                        <a href="/categories/homeLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center text-center">
-                            <Home className="w-10 h-10 text-purple-700 dark:text-purple-300 mb-3" />
-                            <h3 className="font-bold text-purple-700 dark:text-purple-300 mb-1">Home Loan</h3>
-                            <p className="text-sm text-gray-700 dark:text-gray-200">
+                        </div>
+
+                        {/* home loan */}
+                        <div href="/categories/homeLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center ">
+                            <img src={home} alt="Personal Loan" className="w-12 h-12 mb-3" />
+                            <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Home Loan</h3>
+                            <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
                                 Plan your home financing effectively by accurately projecting your monthly EMIs.
                             </p>
-                        </a>
-                        <a href="/categories/gstCalculator" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center text-center">
-                            <Percent className="w-10 h-10 text-purple-700 dark:text-purple-300 mb-3" />
-                            <h3 className="font-bold text-purple-700 dark:text-purple-300 mb-1">GST Calculator</h3>
-                            <p className="text-sm text-gray-700 dark:text-gray-200">
+                        </div>
+
+                        {/* gst */}
+                        <div href="/categories/gstCalculator" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
+                            <img src={gst} alt="Personal Loan" className="w-12 h-12 mb-3" />
+                            <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">GST Calculator</h3>
+                            <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
                                 Quickly determine GST amounts and total pricing to comply with tax regulations and manage costs.
                             </p>
-                        </a>
-                        <a href="/categories/carLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center text-center">
-                            <Car className="w-10 h-10 text-purple-700 dark:text-purple-300 mb-3" />
-                            <h3 className="font-bold text-purple-700 dark:text-purple-300 mb-1">Car Loan</h3>
-                            <p className="text-sm text-gray-700 dark:text-gray-200">
+                        </div>
+
+                        {/* car loan */}
+                        <div href="/categories/carLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
+                            <img src={car} alt="Personal Loan" className="w-12 h-12 mb-3" />
+                            <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Car Loan</h3>
+                            <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
                                 Evaluate vehicle loan EMIs to make informed decisions when purchasing your next car.
                             </p>
-                        </a>
+                        </div>
                     </div>
                 </div>
 
