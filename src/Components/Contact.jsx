@@ -7,7 +7,7 @@ export default function ContactPage() {
 
     return (
         <div className={`${theme === 'light' ? 'bg-gray-50 text-gray-900' : 'bg-gray-900 text-gray-100'} min-h-screen`}>
-            <AdPlaceholder />
+            {/* <AdPlaceholder /> */}
             <main className="container mx-auto px-4 py-8">
                 <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
                 <p className="max-w-xl mb-6">

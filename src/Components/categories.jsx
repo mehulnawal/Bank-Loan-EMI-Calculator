@@ -38,7 +38,7 @@ export default function Categories() {
 
                 <Breadcrumb paths={paths} />
 
-                <AdPlaceholder />
+                {/* {/* <AdPlaceholder /> */} */
 
                 {/* Intro */}
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200  max-w-2xl">
@@ -51,7 +51,7 @@ export default function Categories() {
                     Empower your budgeting and investment strategies with tools that offer precision and ease of use, supporting your goal to achieve financial clarity and success.
                 </p>
 
-                <AdPlaceholder />
+                {/* <AdPlaceholder /> */}
 
                 {/* Features */}
                 <div className="w-full space-y-4">
@@ -67,7 +67,7 @@ export default function Categories() {
                     </ul>
                 </div>
 
-                <AdPlaceholder />
+                {/* <AdPlaceholder /> */}
 
                 {/* Calculator Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mt-6">
