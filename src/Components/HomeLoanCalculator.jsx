@@ -60,7 +60,7 @@ export default function HomeLoan() {
 
                 <Breadcrumb paths={paths} />
 
-                
+
 
                 <div className="w-full space-y-6">
                     <div className="relative">
@@ -108,7 +108,21 @@ export default function HomeLoan() {
                     )}
                 </div>
 
-                
+                <div className="w-full mt-10 p-4 bg-purple-50 dark:bg-gray-800 rounded-lg shadow text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                    <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
+                        About Home Loans
+                    </h2>
+                    <p>
+                        A home loan, also known as a mortgage, is a secured loan specifically taken for purchasing, constructing, or renovating residential property. The property itself serves as collateral, making interest rates generally lower compared to unsecured loans.
+                    </p>
+                    <p className="mt-3">
+                        Home loans usually have longer tenures, often spanning 10 to 30 years, allowing for manageable monthly installments (EMIs). Factors such as loan amount, interest rate, tenure, and your creditworthiness influence your EMI, which you can calculate using the above calculator.
+                    </p>
+                    <p className="mt-3">
+                        Proper planning and understanding of terms like floating vs fixed interest rates, prepayment options, and penalties can help you optimize your home loan effectively.
+                    </p>
+                </div>
+
 
                 <Footer />
             </div>

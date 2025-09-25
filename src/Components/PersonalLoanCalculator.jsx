@@ -60,7 +60,7 @@ export default function PersonalLoan() {
 
                 <Breadcrumb paths={paths} />
 
-                
+
 
                 <div className="w-full space-y-6">
                     <div className="relative">
@@ -108,7 +108,25 @@ export default function PersonalLoan() {
                     )}
                 </div>
 
-                
+                {/* Add Personal Loan Info */}
+                <div className="w-full mt-10 p-4 bg-purple-50 dark:bg-gray-800 rounded-lg shadow text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                    <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
+                        About Personal Loans
+                    </h2>
+                    <p>
+                        A personal loan is an unsecured loan that can be used for multiple financial needs
+                        such as medical emergencies, wedding expenses, education, travel, or debt consolidation.
+                        Unlike home or car loans, personal loans do not require collateral, but interest rates may
+                        be higher depending on your credit score and repayment history.
+                    </p>
+                    <p className="mt-3">
+                        When applying, consider factors like loan amount, annual interest rate, and the tenure
+                        to calculate your monthly EMIs. The EMI calculator above helps you estimate repayment amounts
+                        and plan your budget effectively.
+                    </p>
+                </div>
+
+
 
                 <Footer />
             </div>

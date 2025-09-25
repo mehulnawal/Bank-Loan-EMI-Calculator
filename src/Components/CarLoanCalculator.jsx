@@ -108,6 +108,22 @@ export default function CarLoan() {
                     )}
                 </div>
 
+                <div className="w-full mt-10 p-4 bg-purple-50 dark:bg-gray-800 rounded-lg shadow text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                    <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
+                        About Car Loans
+                    </h2>
+                    <p>
+                        A car loan is a type of secured loan taken to finance the purchase of a vehicle. The car itself acts as collateral, often resulting in lower interest rates compared to unsecured loans.
+                    </p>
+                    <p className="mt-3">
+                        Car loans typically have shorter tenures than home loans, usually ranging from 1 to 7 years. The monthly EMI depends on the loan amount, interest rate, and tenure, and can be easily estimated using the calculator above.
+                    </p>
+                    <p className="mt-3">
+                        It's important to review terms such as down payment requirements, prepayment options, and processing fees when choosing a car loan to find a deal that best fits your financial situation.
+                    </p>
+                </div>
+
+
                 <Footer />
             </div>
         </div>

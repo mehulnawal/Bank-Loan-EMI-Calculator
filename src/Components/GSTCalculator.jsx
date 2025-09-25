@@ -92,6 +92,22 @@ export default function Gst() {
                     )}
                 </div>
 
+                <div className="w-full mt-10 p-4 bg-purple-50 dark:bg-gray-800 rounded-lg shadow text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                    <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
+                        About GST
+                    </h2>
+                    <p>
+                        Goods and Services Tax (GST) is a comprehensive indirect tax levied on the supply of goods and services across India, replacing multiple indirect taxes previously applied by the central and state governments.
+                    </p>
+                    <p className="mt-3">
+                        GST is designed to simplify the tax structure by subsuming various taxes into a single system, enhancing transparency and promoting ease of doing business. The rate varies depending on the type of goods or services.
+                    </p>
+                    <p className="mt-3">
+                        This calculator helps you determine the GST amount on a given price as well as the total amount payable inclusive of GST, enabling better price and tax planning.
+                    </p>
+                </div>
+
+
                 <Footer />
             </div>
         </div>
