@@ -21,7 +21,6 @@ export default function HomePage() {
 
                 <Breadcrumb paths={paths} />
 
-                <AdPlaceholder />
 
                 <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-4 sm:py-5 px-3 sm:px-5 mb-6">
                     <div className="text-md sm:text-lg font-semibold text-purple-800 dark:text-purple-300 mb-3">
@@ -52,7 +51,7 @@ export default function HomePage() {
                         </p>
                     </div>
 
-                    <AdPlaceholder />
+
 
                     <div>
                         <h2 className="text-xl sm:text-2xl font-bold mb-2 text-center text-gray-900 dark:text-white">
@@ -65,7 +64,7 @@ export default function HomePage() {
                         </p>
                     </div>
 
-                    <AdPlaceholder />
+
 
                     <div>
                         <h2 className="text-xl sm:text-2xl font-bold mb-2 text-center text-gray-900 dark:text-white">
@@ -79,7 +78,7 @@ export default function HomePage() {
                         </ul>
                     </div>
 
-                    <AdPlaceholder />
+
 
                     <div>
                         <h2 className="text-xl sm:text-2xl font-bold mb-2 text-center text-gray-900 dark:text-white">

@@ -24,7 +24,7 @@ export default function AboutPage() {
 
                 <Breadcrumb paths={paths} />
 
-                <AdPlaceholder />
+                {/* <AdPlaceholder /> */}
 
                 {/* Mission Section */}
                 <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5">

@@ -60,7 +60,7 @@ export default function CarLoan() {
 
                 <Breadcrumb paths={paths} />
 
-                <AdPlaceholder />
+
 
                 <div className="w-full space-y-6">
                     <div className="relative">
@@ -107,8 +107,6 @@ export default function CarLoan() {
                         </div>
                     )}
                 </div>
-
-                <AdPlaceholder />
 
                 <Footer />
             </div>
