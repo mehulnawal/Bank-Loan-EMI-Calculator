@@ -3,6 +3,7 @@ import { ThemeContext } from '../Theme';
 import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
+import { User, Home, Car, Percent, MessageCircle } from 'lucide-react';
 
 export default function AboutPage() {
     const { theme } = useContext(ThemeContext);
@@ -15,109 +16,120 @@ export default function AboutPage() {
     return (
         <div className={`${theme === 'light' ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900' : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'} min-h-screen flex flex-col items-center`}>
 
-            <div className="max-w-md w-full rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-4 py-6 flex flex-col items-center space-y-8">
+            <div className="max-w-md w-full rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-6 py-8 flex flex-col items-center space-y-10">
 
                 {/* Header Section */}
                 <div className="w-full text-center">
-                    <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">What We Are?</h1>
+                    <h1 className="text-4xl font-extrabold mb-6 text-gray-900 dark:text-white">
+                        Who We Are
+                    </h1>
                 </div>
 
                 <Breadcrumb paths={paths} />
 
-                {/* <AdPlaceholder /> */}
-
-                {/* Mission Section */}
-                <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5">
-                    <p className="text-base leading-relaxed text-purple-800 dark:text-purple-300 px-4">
-                        At EMI Calculator, we are dedicated to making complex loan calculations simple and accessible for everyone.
-                        Our mission is to provide user-friendly financial tools that empower you to make informed decisions about your loans and investments.
+                {/* Mission Statement */}
+                <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-6 px-6">
+                    <p className="text-lg leading-relaxed text-purple-800 dark:text-purple-300">
+                        At EMI Calculator, we are committed to transforming complex financial calculations into seamless and accessible experiences. Our suite of calculators empowers users to make informed, confident decisions regarding their loans and investments with precision and ease.
                     </p>
                 </div>
 
-                <div className="w-full">
-                    <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center px-2">
-                        At EMI Calculator Web, our mission is to provide users with easy-to-use, accurate, and efficient tools to perform loan and financial calculations.
-                        We aim to streamline complex computations, making them accessible and user-friendly for anyone seeking quick and precise results.
-                    </p>
-                </div>
-
-                {/* What We Offer Section */}
-                <div className="w-full">
-                    <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white text-center">What We Offer:</h2>
-                    <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center mb-6">
-                        Welcome to our website, your one-stop destination for comprehensive loan calculators designed to simplify your financial planning.
-                        We are dedicated to providing intuitive and efficient tools to assist you in managing and understanding crucial aspects of your financial life.
-                    </p>
-                </div>
-
-                {/* Calculator Types */}
-                <div className="w-full space-y-6">
-                    {/* Personal Loan Calculator */}
-                    <div className="w-full text-left bg-purple-100 dark:bg-purple-900 border rounded-xl py-4 px-5">
-                        <h3 className="text-lg font-semibold text-purple-800 dark:text-purple-300 mb-2">Personal Loan Calculator:</h3>
-                        <p className="text-sm text-purple-700 dark:text-purple-200">
-                            Calculate your personal loan EMIs effortlessly. Whether it's for medical expenses, home renovation, or any personal need,
-                            our calculator helps you plan your monthly budget and choose the best loan terms.
-                        </p>
-                    </div>
-
-                    {/* Home Loan Calculator */}
-                    <div className="w-full text-left bg-pink-100 dark:bg-pink-900 border rounded-xl py-4 px-5">
-                        <h3 className="text-lg font-semibold text-pink-800 dark:text-pink-300 mb-2">Home Loan Calculator:</h3>
-                        <p className="text-sm text-pink-700 dark:text-pink-200">
-                            Planning to buy your dream home? Our home loan calculator helps you determine affordable EMIs,
-                            compare different loan tenures, and understand the total interest payable for your mortgage.
-                        </p>
-                    </div>
-
-                    {/* Car Loan Calculator */}
-                    <div className="w-full text-left bg-blue-100 dark:bg-blue-900 border rounded-xl py-4 px-5">
-                        <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-300 mb-2">Car Loan Calculator:</h3>
-                        <p className="text-sm text-blue-700 dark:text-blue-200">
-                            Ready to drive your new car? Our car loan calculator assists you in computing EMIs for auto loans,
-                            helping you choose the right loan amount and tenure that fits your budget.
-                        </p>
-                    </div>
-
-                    {/* GST Calculator */}
-                    <div className="w-full text-left bg-green-100 dark:bg-green-900 border rounded-xl py-4 px-5">
-                        <h3 className="text-lg font-semibold text-green-800 dark:text-green-300 mb-2">GST Calculator:</h3>
-                        <p className="text-sm text-green-700 dark:text-green-200">
-                            Simplify your GST calculations with our comprehensive GST calculator.
-                            Calculate GST amounts, determine inclusive and exclusive prices, and manage your tax computations efficiently.
-                        </p>
-                    </div>
-                </div>
-
-                {/* Why Choose Us Section */}
-                <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5">
-                    <h3 className="text-lg font-semibold text-purple-800 dark:text-purple-300 mb-3">Why Choose Us?</h3>
-                    <div className="text-sm text-purple-700 dark:text-purple-200 space-y-2 px-4">
-                        <p><strong>Accuracy and Reliability:</strong> Our calculators provide precise results, so you can trust the numbers you receive.</p>
-                        <p><strong>User-Friendly Interface:</strong> We design our tools with you in mind. They are simple to use, ensuring quick access to information.</p>
-                        <p><strong>Privacy:</strong> We take your privacy seriously. Rest assured that any data you enter is kept confidential and secure.</p>
-                        <p><strong>Free and Accessible:</strong> We believe access to valuable financial tools should be free, and we're committed to keeping it that way.</p>
-                    </div>
-                </div>
-
-                {/* Get in Touch Section */}
-                <div className="w-full">
-                    <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white text-center">Get in Touch</h3>
-                    <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center mb-4">
-                        We value your feedback and are always looking to improve our tools. If you have any questions, suggestions,
-                        or just want to say hello, don't hesitate to contact us. Your input helps us make our tools better for you.
-                    </p>
+                <div className="w-full px-1">
                     <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center">
-                        Thank you for choosing EMI Calculator. We're here to simplify your financial life and provide the tools you need
-                        to make informed decisions. Start using our calculators today, and take control of your financial journey.
+                        Dedicated to innovation and accuracy, our tools cater to a broad spectrum of financial needs, simplifying computations and enhancing financial literacy for individuals and professionals alike.
                     </p>
                 </div>
 
-                {/* CTA Button */}
+                {/* What We Offer */}
+                <div className="w-full">
+                    <h2 className="text-3xl font-bold mb-5 text-gray-900 dark:text-white text-center">
+                        Our Offerings
+                    </h2>
+                    <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center mb-8">
+                        Explore a comprehensive selection of loan calculators designed to facilitate your financial planning process. Our easy-to-use tools deliver accurate EMI calculations, tax estimations, and more — helping you manage your finances with confidence and control.
+                    </p>
+                </div>
+
+                {/* Calculator Types with Icons - Horizontal Icon and Heading */}
+                <div className="w-full space-y-8">
+                    {[{
+                        icon: User,
+                        title: 'Personal Loan Calculator',
+                        colorLight: 'purple-700',
+                        colorDark: 'purple-300',
+                        bgLight: 'purple-100',
+                        bgDark: 'purple-900',
+                        description: 'Effortlessly calculate your personal loan EMIs, whether for medical needs, home improvements, or other personal expenditures. Our tool helps you determine the best loan terms to suit your budget and repayment capacity.'
+                    }, {
+                        icon: Home,
+                        title: 'Home Loan Calculator',
+                        colorLight: 'pink-800',
+                        colorDark: 'pink-300',
+                        bgLight: 'pink-100',
+                        bgDark: 'pink-900',
+                        description: 'Plan your path to homeownership with our detailed home loan calculator. Analyze different tenures, interest rates, and monthly EMIs to make informed decisions for your mortgage financing.'
+                    }, {
+                        icon: Car,
+                        title: 'Car Loan Calculator',
+                        colorLight: 'blue-800',
+                        colorDark: 'blue-300',
+                        bgLight: 'blue-100',
+                        bgDark: 'blue-900',
+                        description: 'Drive your dreams with confidence. Our car loan calculator provides precise EMI estimates, supporting you to select the ideal car loan amount and repayment schedule.'
+                    }, {
+                        icon: Percent,
+                        title: 'GST Calculator',
+                        colorLight: 'green-800',
+                        colorDark: 'green-300',
+                        bgLight: 'green-100',
+                        bgDark: 'green-900',
+                        description: 'Navigate GST complexities with ease. Calculate GST amounts, ascertain inclusive and exclusive prices, and ensure compliance with our comprehensive GST calculator.'
+                    }].map(({ icon: Icon, title, colorLight, colorDark, bgLight, bgDark, description }) => (
+                        <div key={title} className={`w-full text-left border rounded-xl py-6 px-6 flex flex-col sm:flex-row sm:items-center gap-6 bg-${bgLight} dark:bg-${bgDark}`}>
+                            <div>
+                                <div className={`flex items-center gap-4 sm:mb-0`}>
+                                    <Icon className={`w-7 h-7 text-${colorLight} dark:text-${colorDark}`} />
+                                    <h3 className={`text-2xl font-semibold text-${colorLight} dark:text-${colorDark}`}>
+                                        {title}
+                                    </h3>
+                                </div>
+                                <p className={`text-sm mt-4 text-${colorLight} dark:text-${colorDark} leading-relaxed max-w-xl`}>
+                                    {description}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+
+                {/* Why Choose Us? */}
+                <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-6 px-6">
+                    <h3 className="text-2xl font-semibold text-purple-800 dark:text-purple-300 mb-4">Why Choose EMI Calculator?</h3>
+                    <div className="text-sm text-purple-700 dark:text-purple-200 space-y-3 max-w-lg mx-auto">
+                        <p><strong>Unmatched Accuracy:</strong> We provide reliable and precise calculations, empowering you to trust the results entirely.</p>
+                        <p><strong>Intuitive Design:</strong> Our calculators feature clean interfaces and are easy to use, ensuring efficient interaction.</p>
+                        <p><strong>Your Privacy:</strong> All data you input remains confidential; security is of utmost importance to us.</p>
+                        <p><strong>Access for All:</strong> Enjoy uninterrupted access to our free tools designed for users of all backgrounds.</p>
+                    </div>
+                </div>
+
+                {/* Get in Touch */}
+                <div className="w-full">
+                    <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white text-center">Connect With Us</h3>
+                    <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center mb-6 max-w-lg mx-auto">
+                        We welcome your questions, suggestions, and insights. Your feedback is integral to our continuous improvement and innovation. Reach out anytime and help us serve you better.
+                    </p>
+                    <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center max-w-lg mx-auto">
+                        Thank you for choosing EMI Calculator as your trusted financial planning partner. Begin your journey to informed financial decision-making with our suite of calculators today.
+                    </p>
+                </div>
+
+                {/* Call to Action */}
                 <div className="w-full text-center">
                     <a
                         href="/categories"
-                        className="bg-purple-600 hover:bg-purple-700 text-white font-medium px-8 py-3 rounded-lg shadow transition inline-block"
+                        className="bg-purple-600 hover:bg-purple-700 text-white font-medium px-10 py-4 rounded-lg shadow transition inline-block text-lg"
+                        aria-label="Start using EMI calculators"
                     >
                         Start Calculating Now
                     </a>
