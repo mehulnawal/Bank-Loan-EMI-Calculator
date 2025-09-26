@@ -5,10 +5,10 @@ import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { Calculator, Home, User, Car, Percent } from 'lucide-react';
 
-import loan from '../assets/loan.png'
-import home from '../assets/home.png'
-import car from '../assets/car.png'
-import gst from '../assets/gst.png'
+import loan from '../assets/loan.png';
+import home from '../assets/home.png';
+import car from '../assets/car.png';
+import gst from '../assets/gst.png';
 
 export default function HomePage() {
     const { theme } = useContext(ThemeContext);
@@ -24,7 +24,6 @@ export default function HomePage() {
                 <div className="text-2xl sm:text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
                     Comprehensive Bank Loan EMI Calculator Suite
                 </div>
-
                 <Breadcrumb paths={paths} />
 
                 <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5 px-6 mb-8 sm:flex-row items-center justify-center gap-4">
@@ -40,9 +39,70 @@ export default function HomePage() {
                     </a>
                 </div>
 
-                {/* {/* <AdPlaceholder /> */}
-
                 <div className="space-y-8 text-center sm:text-left">
+
+                    {/* WHAT WE ARE */}
+                    <section>
+                        <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
+                            What We Are?
+                        </h2>
+                        <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200">
+                            At Calculator, we are dedicated to making complex calculations simple and accessible for everyone. Our mission is to provide user-friendly tools that empower you to make informed decisions about your finances and personal milestones. At Calculator Web, our mission is to provide users with easy-to-use, accurate, and efficient tools to perform a multitude of calculations. We aim to streamline complex computations, making them accessible and user-friendly for anyone seeking quick and precise results. We value your feedback and are always looking to improve our tools. Your input helps us make our tools better for you.
+                        </p>
+                        <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 mt-4">
+                            In addition to assisting individual users, we actively collaborate with financial experts to ensure our calculators always reflect the evolving landscape of finance and banking. That's why our suite is trusted for both casual budgeting and expert analysis.
+                        </p>
+                    </section>
+
+                    {/* UNDERSTANDING THE BANK LOAN EMI CALCULATOR */}
+                    <section>
+                        <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
+                            What is a Bank Loan EMI Calculator?
+                        </h2>
+                        <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200">
+                            A Bank Loan EMI Calculator is a simple and effective tool that helps you calculate your Equated Monthly Installment (EMI) based on the loan amount, interest rate, and loan tenure. Whether you’re planning to take a home loan, personal loan, car loan, or education loan, this tool gives you a clear estimate of your monthly repayment amount.
+                        </p>
+                        <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 mt-4">
+                            With instant projections and straightforward fields, you can try varied scenarios, compare interest impacts, and plan repayments ahead of time.
+                        </p>
+                    </section>
+
+                    {/* WHY USE AN EMI CALCULATOR */}
+                    <section>
+                        <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
+                            Why Use an EMI Calculator?
+                        </h2>
+                        <ul className="list-disc list-inside text-base leading-relaxed text-gray-700 dark:text-gray-200 px-6 sm:px-8">
+                            <li>Quick and Easy – Instantly compute your EMI in seconds.</li>
+                            <li>Accurate – Get precise calculations based on your input.</li>
+                            <li>Plan Better – Understand how much you need to repay every month and manage your finances smartly.</li>
+                            <li>Compare Loans – Try different combinations of loan amount, tenure, and interest rate to find the best option.</li>
+                        </ul>
+                        <ul className="list-disc list-inside text-base leading-relaxed text-gray-700 dark:text-gray-200 px-6 sm:px-8 mt-3">
+                            <li>Clear Projections – Adjust values and instantly see updated results for flexible decision-making.</li>
+                            <li>Improved Budgeting – Avoid surprises by knowing your repayment schedule ahead of time.</li>
+                        </ul>
+                    </section>
+
+                    {/* THINGS TO CONSIDER BEFORE TAKING A LOAN */}
+                    <section>
+                        <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
+                            Things to Consider Before Taking a Loan
+                        </h2>
+                        <ul className="list-disc list-inside text-base leading-relaxed text-gray-700 dark:text-gray-200 px-6 sm:px-8">
+                            <li>Interest rates (fixed vs floating).</li>
+                            <li>Processing fees.</li>
+                            <li>Prepayment/foreclosure charges.</li>
+                            <li>Total interest payable.</li>
+                            <li>Monthly cash flow and affordability.</li>
+                        </ul>
+                        <ul className="list-disc list-inside text-base leading-relaxed text-gray-700 dark:text-gray-200 px-6 sm:px-8 mt-3">
+                            <li>Understand your lender's eligibility criteria and documentation needs in advance.</li>
+                            <li>Read the agreement for hidden costs or specific conditions before signing.</li>
+                        </ul>
+                    </section>
+
+                    {/* ABOUT OUR SOLUTIONS */}
                     <section>
                         <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
                             About Our Solutions
@@ -55,87 +115,43 @@ export default function HomePage() {
                         </p>
                     </section>
 
-                    <section>
-                        <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
-                            Understanding the Bank Loan EMI Calculator
+                    {/* POPULAR EMI CALCULATORS */}
+                    <div className="w-full mt-10">
+                        <h2 className="text-xl sm:text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">
+                            Popular EMI Calculators
                         </h2>
-                        <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200">
-                            Our calculators provide straightforward, instant evaluations of your monthly loan repayments based on key inputs such as principal amount, interest rate, and tenure. Applicable for personal, home, car, and GST-related loans, these tools facilitate precise budgeting and effective financial management.
-                        </p>
-                    </section>
-
-                    <section>
-                        <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
-                            Benefits of Utilizing Our EMI Calculators
-                        </h2>
-                        <ul className="list-disc list-inside text-base leading-relaxed text-gray-700 dark:text-gray-200 px-6 sm:px-8">
-                            <li>Real-Time Calculation: Receive immediate and accurate EMI estimates suited to your specific loan parameters.</li>
-                            <li>Enhanced Financial Planning: Assess affordability and cash flow with precise monthly repayment figures.</li>
-                            <li>Scenario Comparison: Experiment with loan terms and rates to select the optimal borrowing solution.</li>
-                            <li>User-Centric Design: Enjoy a streamlined experience across devices ensuring ease of use for all users.</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
-                            Essential Considerations Prior to Loan Commitment
-                        </h2>
-                        <ul className="list-disc list-inside text-base leading-relaxed text-gray-700 dark:text-gray-200 px-6 sm:px-8">
-                            <li>Compare Fixed and Floating Interest Rates to identify the most stable and cost-effective option.</li>
-                            <li>Evaluate Processing and Other Ancillary Fees impacting the total loan cost.</li>
-                            <li>Clarify Prepayment or Foreclosure Charges for optimal repayment strategies.</li>
-                            <li>Calculate Total Interest Outflow over the lifecycle of the loan.</li>
-                            <li>Assure Monthly Repayment Affordability aligned with your budget and cash flow.</li>
-                        </ul>
-                    </section>
-                </div>
-
-                {/* Popular EMI Calculators with updated categories and icons */}
-                <div className="w-full mt-10">
-                    <h2 className="text-xl sm:text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">
-                        Popular EMI Calculators
-                    </h2>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-                        {/* personal loan */}
-                        <div href="/categories/personalLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
-                            <img src={loan} alt="Personal Loan" className="w-12 h-12 mb-3" />
-                            <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Personal Loan</h3>
-                            <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
-                                Precisely calculate monthly instalments for personal loans, assisting you in budgeting and timely repayments.
-                            </p>
-                        </div>
-
-                        {/* home loan */}
-                        <div href="/categories/homeLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center ">
-                            <img src={home} alt="Personal Loan" className="w-12 h-12 mb-3" />
-                            <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Home Loan</h3>
-                            <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
-                                Plan your home financing effectively by accurately projecting your monthly EMIs.
-                            </p>
-                        </div>
-
-                        {/* gst */}
-                        <div href="/categories/gstCalculator" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
-                            <img src={gst} alt="Personal Loan" className="w-12 h-12 mb-3" />
-                            <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">GST Calculator</h3>
-                            <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
-                                Quickly determine GST amounts and total pricing to comply with tax regulations and manage costs.
-                            </p>
-                        </div>
-
-                        {/* car loan */}
-                        <div href="/categories/carLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
-                            <img src={car} alt="Personal Loan" className="w-12 h-12 mb-3" />
-                            <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Car Loan</h3>
-                            <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
-                                Evaluate vehicle loan EMIs to make informed decisions when purchasing your next car.
-                            </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div href="/categories/personalLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
+                                <img src={loan} alt="Personal Loan" className="w-12 h-12 mb-3" />
+                                <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Personal Loan</h3>
+                                <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
+                                    Precisely calculate monthly instalments for personal loans, assisting you in budgeting and timely repayments.
+                                </p>
+                            </div>
+                            <div href="/categories/homeLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center ">
+                                <img src={home} alt="Personal Loan" className="w-12 h-12 mb-3" />
+                                <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Home Loan</h3>
+                                <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
+                                    Plan your home financing effectively by accurately projecting your monthly EMIs.
+                                </p>
+                            </div>
+                            <div href="/categories/gstCalculator" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
+                                <img src={gst} alt="Personal Loan" className="w-12 h-12 mb-3" />
+                                <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">GST Calculator</h3>
+                                <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
+                                    Quickly determine GST amounts and total pricing to comply with tax regulations and manage costs.
+                                </p>
+                            </div>
+                            <div href="/categories/carLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
+                                <img src={car} alt="Personal Loan" className="w-12 h-12 mb-3" />
+                                <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Car Loan</h3>
+                                <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
+                                    Evaluate vehicle loan EMIs to make informed decisions when purchasing your next car.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <Footer />
             </div>
         </div>
