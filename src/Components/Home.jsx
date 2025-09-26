@@ -115,6 +115,16 @@ export default function HomePage() {
                         </p>
                     </section>
 
+                    {/*  */}
+                    <section>
+                        <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
+                            Best Financial Decisions
+                        </h2>
+                        <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 mt-4">
+                            Improve how you make financial choices by using our top-notch EMI calculators. They cover things like Personal Loans, Car Loans, and figuring out EMIs of Loans.
+                        </p>
+                    </section>
+
                     {/* POPULAR EMI CALCULATORS */}
                     <div className="w-full mt-10">
                         <h2 className="text-xl sm:text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">
