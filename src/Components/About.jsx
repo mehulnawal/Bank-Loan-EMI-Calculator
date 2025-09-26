@@ -115,17 +115,6 @@ export default function AboutPage() {
                     </div>
                 </div>
 
-                {/* Get in Touch */}
-                <div className="w-full">
-                    <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white text-center">Connect With Us</h3>
-                    <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center mb-6 max-w-lg mx-auto">
-                        We welcome your questions, suggestions, and insights. Your feedback is integral to our continuous improvement and innovation. Reach out anytime and help us serve you better.
-                    </p>
-                    <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 text-center max-w-lg mx-auto">
-                        Thank you for choosing EMI Calculator as your trusted financial planning partner. Begin your journey to informed financial decision-making with our suite of calculators today.
-                    </p>
-                </div>
-
                 {/* Call to Action */}
                 <div className="w-full text-center">
                     <a

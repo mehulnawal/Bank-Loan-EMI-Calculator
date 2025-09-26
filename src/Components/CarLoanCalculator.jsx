@@ -1,9 +1,9 @@
 import { useContext, useState } from 'react';
 import { ThemeContext } from '../Theme';
-import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { IndianRupee } from 'lucide-react';
+import car from '../assets/car.png';
 
 export default function CarLoan() {
     const { theme } = useContext(ThemeContext);
@@ -42,26 +42,48 @@ export default function CarLoan() {
         const P = parseFloat(principal);
         const R = parseFloat(rate) / 12 / 100;
         const N = parseInt(tenure, 10);
+
         if (R === 0) {
             setEmi((P / N).toFixed(2));
             return;
         }
+
         const emiCalc = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
         setEmi(emiCalc.toFixed(2));
     };
 
     return (
-        <div className={`${theme === 'light' ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900' : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'} min-h-screen flex flex-col items-center px-2 sm:px-4`}>
-            <div className="w-full max-w-lg sm:max-w-md rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center space-y-8">
+        <div className={`${theme === 'light'
+            ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900'
+            : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'
+            } min-h-screen flex flex-col items-center px-2 sm:px-4`}
+        >
+            <div className="w-full max-w-2xl rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center space-y-8">
 
+                {/* Header */}
                 <div className="text-2xl sm:text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
                     Car Loan Calculator
                 </div>
 
                 <Breadcrumb paths={paths} />
 
-                {/* <AdPlaceholder /> */}
+                <img src={car} alt="Car Loan" className="my-4 w-25" />
 
+
+                {/* How to Use Section */}
+                <div className="w-full bg-purple-50 dark:bg-gray-800 rounded-lg p-4 text-gray-700 dark:text-gray-300">
+                    <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
+                        How To Use
+                    </h2>
+                    <ul className="list-disc pl-5 space-y-1">
+                        <li>Enter Loan Amount</li>
+                        <li>Enter Interest Rate</li>
+                        <li>Enter Holding (in months)</li>
+                        <li>After entering details, the calculator will show total interest payable and total loan cost.</li>
+                    </ul>
+                </div>
+
+                {/* Input Section */}
                 <div className="w-full space-y-6">
                     <div className="relative">
                         <IndianRupee className="absolute top-3 left-3 w-6 h-6 text-gray-400 dark:text-gray-500" />
@@ -108,21 +130,24 @@ export default function CarLoan() {
                     )}
                 </div>
 
+                {/* About Section */}
                 <div className="w-full mt-10 p-4 bg-purple-50 dark:bg-gray-800 rounded-lg shadow text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                     <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
-                        About Car Loans
+                        About Car Loan Calculator
                     </h2>
                     <p>
-                        A car loan is a type of secured loan taken to finance the purchase of a vehicle. The car itself acts as collateral, often resulting in lower interest rates compared to unsecured loans.
+                        An online car loan calculator offers several benefits. Firstly, it allows users to quickly estimate monthly payments based on factors such as loan amount, interest rate, and repayment term.
                     </p>
                     <p className="mt-3">
-                        Car loans typically have shorter tenures than home loans, usually ranging from 1 to 7 years. The monthly EMI depends on the loan amount, interest rate, and tenure, and can be easily estimated using the calculator above.
+                        By inputting these variables, borrowers can clearly see how different loan terms impact their budget, helping them determine the most affordable option.
                     </p>
                     <p className="mt-3">
-                        It's important to review terms such as down payment requirements, prepayment options, and processing fees when choosing a car loan to find a deal that best fits your financial situation.
+                        Secondly, users can compare financing options from different lenders by entering the terms of multiple loans, making it easier to identify the best deal.
+                    </p>
+                    <p className="mt-3">
+                        Furthermore, this calculator helps plan long-term financial commitments by showing total loan cost and the effect of interest rates—empowering borrowers to make informed decisions aligned with their priorities.
                     </p>
                 </div>
-
 
                 <Footer />
             </div>

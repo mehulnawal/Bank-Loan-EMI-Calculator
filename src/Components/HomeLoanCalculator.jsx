@@ -4,6 +4,7 @@ import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { IndianRupee } from 'lucide-react';
+import home from '../assets/home.png';
 
 export default function HomeLoan() {
     const { theme } = useContext(ThemeContext);
@@ -59,6 +60,8 @@ export default function HomeLoan() {
                 </div>
 
                 <Breadcrumb paths={paths} />
+
+                <img src={home} alt="Personal Loan" className="my-4 w-25" />
 
                 {/* <AdPlaceholder /> */}
 

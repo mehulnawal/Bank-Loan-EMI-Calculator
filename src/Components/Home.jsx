@@ -7,8 +7,6 @@ import { Calculator, Home, User, Car, Percent } from 'lucide-react';
 
 import loan from '../assets/loan.png';
 import home from '../assets/home.png';
-import car from '../assets/car.png';
-import gst from '../assets/gst.png';
 
 export default function HomePage() {
     const { theme } = useContext(ThemeContext);
@@ -19,6 +17,7 @@ export default function HomePage() {
 
     return (
         <div className={`${theme === 'light' ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900' : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'} min-h-screen flex flex-col items-center px-2 sm:px-4`}>
+
             <div className="w-full max-w-lg sm:max-w-md rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center space-y-8">
 
                 <div className="text-2xl sm:text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
@@ -40,6 +39,69 @@ export default function HomePage() {
                 </div>
 
                 <div className="space-y-8 text-center sm:text-left">
+
+                    {/* best financial */}
+                    <section>
+                        <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
+                            Best Financial Decisions
+                        </h2>
+                        <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 mt-4">
+                            Improve how you make financial choices by using our top-notch EMI calculators. They cover things like Personal Loans, Car Loans, and figuring out EMIs of Loans.
+                        </p>
+                    </section>
+
+                    <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5 px-6 mb-8 sm:flex-row items-center justify-center gap-4">
+                        <div className="text-lg font-semibold text-purple-800 dark:text-purple-300 mb-4">
+                            Explore All Bank and Loan EMI Calculators
+                        </div>
+
+                        <div className='flex  items-center space-x-3'>
+                            <a
+                                href="/categories"
+                                className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-2 rounded-lg shadow transition"
+                                aria-label="Explore Loan Categories"
+                            >
+                                Bank Loan Calculator
+                            </a>
+
+                            <a
+                                href="/everyday"
+                                className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-2 rounded-lg shadow transition"
+                                aria-label="Explore Loan Categories"
+                            >
+                                Everyday Calculator
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* POPULAR EMI CALCULATORS */}
+                    <div className="w-full mt-10">
+                        <h2 className="text-xl sm:text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">
+                            Popular EMI Calculators
+                        </h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div href="/categories/personalLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
+                                <img src={loan} alt="Personal Loan" className="w-12 h-12 mb-3" />
+                                <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Personal Loan</h3>
+                                <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
+                                    Calculate Loan EMI estimate of monthly payments and total cost of a personal loan.
+                                </p>
+
+                                <a className='mt-5 rounded-xl px-4 py-1 border border-purple-800 dark:text-purple-300' href="/personalLoan">Try Now</a>
+                            </div>
+
+
+                            <div href="/categories/homeLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center ">
+                                <img src={home} alt="Personal Loan" className="w-12 h-12 mb-3" />
+                                <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Home Loan</h3>
+                                <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
+                                    Calculate Loan and EMI estimate monthly payments and total cost of a home mortgage.
+                                </p>
+
+                                <a className='mt-5 rounded-xl px-4 py-1 border border-purple-800 dark:text-purple-300' href="/homeLoan">Try Now</a>
+                            </div>
+                        </div>
+                    </div>
 
                     {/* WHAT WE ARE */}
                     <section>
@@ -114,53 +176,6 @@ export default function HomePage() {
                             Committed to delivering accuracy, efficiency, and reliability, we continuously refine our offerings based on rigorous client feedback and evolving financial landscapes.
                         </p>
                     </section>
-
-                    {/*  */}
-                    <section>
-                        <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
-                            Best Financial Decisions
-                        </h2>
-                        <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 mt-4">
-                            Improve how you make financial choices by using our top-notch EMI calculators. They cover things like Personal Loans, Car Loans, and figuring out EMIs of Loans.
-                        </p>
-                    </section>
-
-                    {/* POPULAR EMI CALCULATORS */}
-                    <div className="w-full mt-10">
-                        <h2 className="text-xl sm:text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">
-                            Popular EMI Calculators
-                        </h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div href="/categories/personalLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
-                                <img src={loan} alt="Personal Loan" className="w-12 h-12 mb-3" />
-                                <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Personal Loan</h3>
-                                <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
-                                    Precisely calculate monthly instalments for personal loans, assisting you in budgeting and timely repayments.
-                                </p>
-                            </div>
-                            <div href="/categories/homeLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center ">
-                                <img src={home} alt="Personal Loan" className="w-12 h-12 mb-3" />
-                                <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Home Loan</h3>
-                                <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
-                                    Plan your home financing effectively by accurately projecting your monthly EMIs.
-                                </p>
-                            </div>
-                            <div href="/categories/gstCalculator" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
-                                <img src={gst} alt="Personal Loan" className="w-12 h-12 mb-3" />
-                                <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">GST Calculator</h3>
-                                <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
-                                    Quickly determine GST amounts and total pricing to comply with tax regulations and manage costs.
-                                </p>
-                            </div>
-                            <div href="/categories/carLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
-                                <img src={car} alt="Personal Loan" className="w-12 h-12 mb-3" />
-                                <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Car Loan</h3>
-                                <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
-                                    Evaluate vehicle loan EMIs to make informed decisions when purchasing your next car.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <Footer />
             </div>

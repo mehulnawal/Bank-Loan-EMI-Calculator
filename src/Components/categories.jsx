@@ -2,19 +2,19 @@ import { useContext } from 'react';
 import { ThemeContext } from '../Theme';
 import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
+import Breadcrumb from './Breadcrumb';
 
 import loan from '../assets/loan.png';
 import home from '../assets/home.png';
 import car from '../assets/car.png';
 import gst from '../assets/gst.png';
-import Breadcrumb from './Breadcrumb';
 
 export default function Categories() {
     const { theme } = useContext(ThemeContext);
 
     const paths = [
-        { label: "Home", href: "/" },
-        { label: "Categories", href: "/categories" },
+        { label: 'Home', href: '/' },
+        { label: 'Categories', href: '/categories' },
     ];
 
     return (
@@ -24,50 +24,58 @@ export default function Categories() {
                 : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'
                 } min-h-screen flex flex-col items-center`}
         >
-            <div className="max-w-3xl w-full rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-6 py-8 flex flex-col items-center space-y-8">
+            <div className="w-full max-w-lg sm:max-w-md rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-6 py-8 flex flex-col items-center space-y-8">
 
                 {/* Heading */}
-                <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5 mb-6">
+                <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5 mb-6 px-3">
                     <h1 className="text-3xl font-bold text-purple-900 dark:text-purple-300">
                         Comprehensive Banking Loan Calculator Suite
                     </h1>
-                    <p className="mt-2 max-w-xl mx-auto text-gray-700 dark:text-gray-300 text-base leading-relaxed">
+                    <p className="mt-5 max-w-xl mx-auto text-gray-700 dark:text-gray-300 text-base leading-relaxed">
                         Leverage our suite of free, precisely engineered calculators designed to help you navigate complex financial considerations with ease. From loan EMIs to tax calculations, our tools empower you to plan strategically and confidently.
                     </p>
                 </div>
 
                 <Breadcrumb paths={paths} />
 
-                {/* {/* <AdPlaceholder /> */} 
+                {/* {/* <AdPlaceholder /> */}
 
                 {/* Intro */}
-                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200  max-w-2xl">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200 max-w-2xl">
                     Seamlessly manage your financial decisions using our versatile calculators tailored for various banking needs, including loan repayments, interest computations, and savings plans.
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200  max-w-2xl">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200 max-w-2xl">
                     Whether assessing monthly installments for a new loan or calculating GST on purchases, our intuitive calculators provide accurate, real-time results designed to simplify your financial planning process.
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200  max-w-2xl">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200 max-w-2xl">
                     Empower your budgeting and investment strategies with tools that offer precision and ease of use, supporting your goal to achieve financial clarity and success.
                 </p>
 
                 {/* <AdPlaceholder /> */}
 
-                {/* Features */}
+                {/* Features of the Banking Calculator */}
                 <div className="w-full space-y-4">
                     <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                        Key Features of Our Calculators
+                        🔹 Features of the Banking Calculator
                     </h2>
                     <ul className="list-disc text-left text-base leading-relaxed text-gray-700 dark:text-gray-200 pl-6 space-y-2">
-                        <li><strong>Loan EMI Calculator:</strong> Calculate monthly repayment amounts customized to your loan’s principal, interest rate, and tenure with precision.</li>
-                        <li><strong>Fixed Deposit Calculator:</strong> Project your investment growth over time, factoring in compound interest earnings.</li>
-                        <li><strong>Savings Goal Planner:</strong> Determine the monthly savings required to reach your financial objectives efficiently.</li>
-                        <li><strong>Interest Rate Comparator:</strong> Quickly compare and analyze different bank interest rates to maximize your returns.</li>
-                        <li><strong>Mortgage and Auto Loan Estimator:</strong> Evaluate your monthly financial obligations prior to committing to significant purchases.</li>
+                        <li><strong>Loan EMI Calculator:</strong> Find out your monthly payments based on the loan amount, interest rate, and tenure.</li>
+                        <li><strong>Fixed Deposit Calculator:</strong> Estimate your fixed deposit returns over time, including compound interest.</li>
+                        <li><strong>Savings Goal Tracker:</strong> Determine how much you need to save monthly to reach your target amount.</li>
+                        <li><strong>Interest Rate Comparison:</strong> Compare different banks' interest rates to find the best deal.</li>
+                        <li><strong>Mortgage/Auto Loan Estimator:</strong> Know your monthly cost before committing to a major purchase.</li>
                     </ul>
                 </div>
 
-                {/* <AdPlaceholder /> */}
+                {/* About Smart Calculator */}
+                <div className="w-full space-y-4">
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-6">
+                        About Smart Calculator
+                    </h2>
+                    <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200 max-w-2xl">
+                        At Calculator, we are dedicated to making complex calculations simple and accessible for everyone. We aim to streamline complex computations, making them accessible and user-friendly for anyone seeking quick and precise results. Your input helps us make our tools better for you.
+                    </p>
+                </div>
 
                 {/* Calculator Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mt-6">
@@ -134,4 +142,3 @@ export default function Categories() {
         </div>
     );
 }
-

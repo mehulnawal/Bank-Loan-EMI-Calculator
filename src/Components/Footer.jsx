@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="max-w-4xl mx-auto">
 
                 {/* Main Footer Text */}
-                <div className="text-center mb-8">
+                <div className="w-full text-center mb-8">
                     <p className="text-lg leading-relaxed max-w-2xl mx-auto">
                         Thank you for choosing Our Website. We're here to simplify your life and
                         provide the tools you need to make informed decisions. Start using our calculators today, and
@@ -22,7 +22,7 @@ export default function Footer() {
                 <div className={`border-t ${theme === 'light' ? 'border-gray-200' : 'border-gray-600'} mb-8`}></div>
 
                 {/* Footer Links */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:text-left">
 
                     {/* Information Section */}
                     <div>
@@ -30,7 +30,6 @@ export default function Footer() {
                             Information
                         </h3>
                         <ul className="space-y-2">
-
                             <li>
                                 <a
                                     href="/"
@@ -48,56 +47,11 @@ export default function Footer() {
                                     About Us
                                 </a>
                             </li>
-
-                            <li>
-                                <a
-                                    href="/categories"
-                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
-                                >
-                                    Categories
-                                </a>
-                            </li>
-
-                            <li>
-                                <a
-                                    href="/homeLoan"
-                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
-                                >
-                                    Home Loan Calculator
-                                </a>
-                            </li>
-
-                            <li>
-                                <a
-                                    href="/carLoan"
-                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
-                                >
-                                    Car Loan Calculator
-                                </a>
-                            </li>
-
-                            <li>
-                                <a
-                                    href="/personalLoan"
-                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
-                                >
-                                    Personal Loan Calculator
-                                </a>
-                            </li>
-
-                            <li>
-                                <a
-                                    href="/gstCalculator"
-                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
-                                >
-                                    GST Calculator
-                                </a>
-                            </li>
                         </ul>
                     </div>
 
                     {/* Terms And Policy Section */}
-                    {/* <div>
+                    <div>
                         <h3 className={`font-semibold text-lg mb-4 ${theme === 'light' ? 'text-gray-800' : 'text-gray-200'}`}>
                             Terms And Policy
                         </h3>
@@ -134,16 +88,8 @@ export default function Footer() {
                                     Disclaimer
                                 </a>
                             </li>
-                            <li>
-                                <a
-                                    href="/gdpr"
-                                    className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
-                                >
-                                    GDPR
-                                </a>
-                            </li>
                         </ul>
-                    </div> */}
+                    </div>
                 </div>
 
             </div>

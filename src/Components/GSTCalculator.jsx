@@ -1,8 +1,8 @@
 import { useContext, useState } from 'react';
 import { ThemeContext } from '../Theme';
-import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
+import GST from '../assets/gst.png';
 
 export default function Gst() {
     const { theme } = useContext(ThemeContext);
@@ -53,7 +53,7 @@ export default function Gst() {
 
                 <Breadcrumb paths={paths} />
 
-                {/* <AdPlaceholder /> */}
+                <img src={GST} alt="Gst Calculator" className="my-5 w-25" />
 
                 <div className="w-full space-y-6">
                     <div>
@@ -106,7 +106,6 @@ export default function Gst() {
                         This calculator helps you determine the GST amount on a given price as well as the total amount payable inclusive of GST, enabling better price and tax planning.
                     </p>
                 </div>
-
 
                 <Footer />
             </div>

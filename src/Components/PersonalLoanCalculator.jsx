@@ -1,9 +1,9 @@
 import { useContext, useState } from 'react';
 import { ThemeContext } from '../Theme';
-import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { IndianRupee } from 'lucide-react';
+import loan from '../assets/loan.png';
 
 export default function PersonalLoan() {
     const { theme } = useContext(ThemeContext);
@@ -14,21 +14,21 @@ export default function PersonalLoan() {
     const [errors, setErrors] = useState({});
 
     const paths = [
-        { label: "Home", href: "/" },
-        { label: "Categories", href: "/categories" },
-        { label: "Personal Loan", href: "/personalLoan" },
+        { label: 'Home', href: '/' },
+        { label: 'Categories', href: '/categories' },
+        { label: 'Personal Loan', href: '/personalLoan' },
     ];
 
     const validateInputs = () => {
         const errs = {};
         if (!principal || parseFloat(principal) <= 0) {
-            errs.principal = "Enter a valid positive loan amount";
+            errs.principal = 'Enter a valid positive loan amount';
         }
         if (!rate || parseFloat(rate) <= 0) {
-            errs.rate = "Enter a valid positive interest rate";
+            errs.rate = 'Enter a valid positive interest rate';
         }
         if (!tenure || parseInt(tenure, 10) <= 0) {
-            errs.tenure = "Enter a valid positive tenure";
+            errs.tenure = 'Enter a valid positive tenure';
         }
         setErrors(errs);
         return Object.keys(errs).length === 0;
@@ -42,27 +42,48 @@ export default function PersonalLoan() {
         const P = parseFloat(principal);
         const R = parseFloat(rate) / 12 / 100;
         const N = parseInt(tenure, 10);
+
         if (R === 0) {
             setEmi((P / N).toFixed(2));
             return;
         }
+
         const emiCalc = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
         setEmi(emiCalc.toFixed(2));
     };
 
     return (
-        <div className={`${theme === 'light' ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900' : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'} min-h-screen flex flex-col items-center px-2 sm:px-4`}>
-            <div className="w-full max-w-lg sm:max-w-md rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center space-y-8">
+        <div
+            className={`${theme === 'light'
+                ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900'
+                : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'
+                } min-h-screen flex flex-col items-center px-2 sm:px-4`}
+        >
+            <div className="w-full max-w-2xl rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center space-y-8">
 
+                {/* Header */}
                 <div className="text-2xl sm:text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
                     Personal Loan Calculator
                 </div>
 
                 <Breadcrumb paths={paths} />
 
-                {/* <AdPlaceholder /> */}
+                <img src={loan} alt="Personal Loan" className="my-4 w-25" />
 
+                {/* How to Use Section */}
+                <div className="w-full bg-purple-50 dark:bg-gray-800 rounded-lg p-4 text-gray-700 dark:text-gray-300">
+                    <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
+                        How To Use
+                    </h2>
+                    <ul className="list-disc pl-5 space-y-1">
+                        <li>Enter Loan Amount</li>
+                        <li>Enter Interest Rate</li>
+                        <li>Enter Holding (in months)</li>
+                        <li>After entering details, the calculator will show total interest payable and total loan cost.</li>
+                    </ul>
+                </div>
 
+                {/* Input Section */}
                 <div className="w-full space-y-6">
                     <div className="relative">
                         <IndianRupee className="absolute top-3 left-3 w-6 h-6 text-gray-400 dark:text-gray-500" />
@@ -70,10 +91,13 @@ export default function PersonalLoan() {
                             type="number"
                             placeholder="Loan Amount"
                             value={principal}
-                            onChange={(e) => setPrincipal(e.target.value)}
-                            className={`w-full px-10 py-2 rounded border ${errors.principal ? "border-red-500" : "border-gray-300"} dark:border-gray-600 focus:outline-none focus:ring`}
+                            onChange={e => setPrincipal(e.target.value)}
+                            className={`w-full px-10 py-2 rounded border ${errors.principal ? 'border-red-500' : 'border-gray-300'
+                                } dark:border-gray-600 focus:outline-none focus:ring`}
                         />
-                        {errors.principal && <p className="text-red-500 text-sm mt-1">{errors.principal}</p>}
+                        {errors.principal && (
+                            <p className="text-red-500 text-sm mt-1">{errors.principal}</p>
+                        )}
                     </div>
 
                     <input
@@ -81,19 +105,25 @@ export default function PersonalLoan() {
                         placeholder="Annual Interest Rate (%)"
                         step="0.01"
                         value={rate}
-                        onChange={(e) => setRate(e.target.value)}
-                        className={`w-full px-3 py-2 rounded border ${errors.rate ? "border-red-500" : "border-gray-300"} dark:border-gray-600 focus:outline-none focus:ring`}
+                        onChange={e => setRate(e.target.value)}
+                        className={`w-full px-3 py-2 rounded border ${errors.rate ? 'border-red-500' : 'border-gray-300'
+                            } dark:border-gray-600 focus:outline-none focus:ring`}
                     />
-                    {errors.rate && <p className="text-red-500 text-sm mt-1">{errors.rate}</p>}
+                    {errors.rate && (
+                        <p className="text-red-500 text-sm mt-1">{errors.rate}</p>
+                    )}
 
                     <input
                         type="number"
                         placeholder="Loan Tenure (Months)"
                         value={tenure}
-                        onChange={(e) => setTenure(e.target.value)}
-                        className={`w-full px-3 py-2 rounded border ${errors.tenure ? "border-red-500" : "border-gray-300"} dark:border-gray-600 focus:outline-none focus:ring`}
+                        onChange={e => setTenure(e.target.value)}
+                        className={`w-full px-3 py-2 rounded border ${errors.tenure ? 'border-red-500' : 'border-gray-300'
+                            } dark:border-gray-600 focus:outline-none focus:ring`}
                     />
-                    {errors.tenure && <p className="text-red-500 text-sm mt-1">{errors.tenure}</p>}
+                    {errors.tenure && (
+                        <p className="text-red-500 text-sm mt-1">{errors.tenure}</p>
+                    )}
 
                     <button
                         onClick={calculateEMI}
@@ -109,25 +139,24 @@ export default function PersonalLoan() {
                     )}
                 </div>
 
-                {/* Add Personal Loan Info */}
+                {/* About Section */}
                 <div className="w-full mt-10 p-4 bg-purple-50 dark:bg-gray-800 rounded-lg shadow text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                     <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
-                        About Personal Loans
+                        About Personal Loan Calculator
                     </h2>
                     <p>
-                        A personal loan is an unsecured loan that can be used for multiple financial needs
-                        such as medical emergencies, wedding expenses, education, travel, or debt consolidation.
-                        Unlike home or car loans, personal loans do not require collateral, but interest rates may
-                        be higher depending on your credit score and repayment history.
+                        An online personal loan calculator is a valuable tool that helps users quickly estimate potential loan costs, compare options, and make informed financial decisions.
                     </p>
                     <p className="mt-3">
-                        When applying, consider factors like loan amount, annual interest rate, and the tenure
-                        to calculate your monthly EMIs. The EMI calculator above helps you estimate repayment amounts
-                        and plan your budget effectively.
+                        Users can input loan amount, interest rate, and repayment term to calculate monthly payments and total interest. This enables borrowers to assess affordability and plan repayment effectively.
+                    </p>
+                    <p className="mt-3">
+                        Additionally, the calculator facilitates comparison shopping by allowing borrowers to evaluate multiple loan offers and choose the most favorable option.
+                    </p>
+                    <p className="mt-3">
+                        Overall, it empowers borrowers to secure a loan that aligns with their needs and goals while minimizing unnecessary costs and risks.
                     </p>
                 </div>
-
-
 
                 <Footer />
             </div>
