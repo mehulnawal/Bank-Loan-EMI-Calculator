@@ -64,9 +64,9 @@ export default function Footer() {
                                     Terms Of Service
                                 </a>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a
-                                    href="/privacy-policy"
+                                    href="/privacyPolicy"
                                     className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
                                 >
                                     Privacy Policy
@@ -74,12 +74,12 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/cookie-policy"
+                                    href="/cookiePolicy"
                                     className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
                                 >
                                     Cookie Policy
                                 </a>
-                            </li>
+                            </li> */}
                             <li>
                                 <a
                                     href="/disclaimer"

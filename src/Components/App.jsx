@@ -12,14 +12,14 @@ import HomeLoan from './HomeLoanCalculator';
 import CarLoan from './CarLoanCalculator';
 import Gst from './GSTCalculator';
 import TermsOfService from './TermsOFService';
-// import PrivacyPolicy from './PrivacyPolicy';
-// import CookiePolicy from './CookiePolicy';
 import Disclaimer from './Disclaimer';
 import EverydayCalculator from './Everyday';
 import AgeCalculator from './AgeCalculator';
 import TwoDateCalculator from './TwoDates';
 import AreaConversionCalculator from './AreaCalculator';
 import RandomNumberGenerator from './RandomNumber';
+// import PrivacyPolicy from './PrivacyPolicy';
+// import CookiePolicy from './CookiePolicy';
 
 export default function App() {
   return (
@@ -36,14 +36,15 @@ export default function App() {
           <Route path="/personalLoan" element={<PersonalLoan />} />
           <Route path="/gstCalculator" element={<Gst />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
-          {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
-          {/* <Route path="/cookie-policy" element={<CookiePolicy />} /> */}
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/everyday" element={<EverydayCalculator />} />
           <Route path="/ageCalculator" element={<AgeCalculator />} />
           <Route path="/twoDatesCalculator" element={<TwoDateCalculator />} />
           <Route path="/areaCalculator" element={<AreaConversionCalculator />} />
           <Route path="/randomNumberCalculator" element={<RandomNumberGenerator />} />
+          {/* <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/cookiePolicy" element={<CookiePolicy />} /> */}
+
           {/* </Route> */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
