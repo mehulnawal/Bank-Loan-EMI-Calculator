@@ -7,6 +7,8 @@ import { Calculator, Home, User, Car, Percent } from 'lucide-react';
 
 import loan from '../assets/loan.png';
 import home from '../assets/home.png';
+import aboutUs from '../assets/about-us.webp';
+import cal2 from '../assets/cal2.png';
 
 export default function HomePage() {
     const { theme } = useContext(ThemeContext);
@@ -108,6 +110,9 @@ export default function HomePage() {
                         <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
                             What We Are?
                         </h2>
+
+                        <img src={aboutUs} alt="Personal Loan" className="mx-auto w-40 my-3" />
+
                         <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200">
                             At Calculator, we are dedicated to making complex calculations simple and accessible for everyone. Our mission is to provide user-friendly tools that empower you to make informed decisions about your finances and personal milestones. At Calculator Web, our mission is to provide users with easy-to-use, accurate, and efficient tools to perform a multitude of calculations. We aim to streamline complex computations, making them accessible and user-friendly for anyone seeking quick and precise results. We value your feedback and are always looking to improve our tools. Your input helps us make our tools better for you.
                         </p>
@@ -134,6 +139,9 @@ export default function HomePage() {
                         <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
                             Why Use an EMI Calculator?
                         </h2>
+
+                        <img src={cal2} alt="Personal Loan" className="mx-auto w-40 my-3" />
+
                         <ul className="list-disc list-inside text-base leading-relaxed text-gray-700 dark:text-gray-200 px-6 sm:px-8">
                             <li>Quick and Easy – Instantly compute your EMI in seconds.</li>
                             <li>Accurate – Get precise calculations based on your input.</li>
