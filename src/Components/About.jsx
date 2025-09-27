@@ -3,7 +3,7 @@ import { ThemeContext } from '../Theme';
 import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
-import { User, Home, Car, Percent, MessageCircle } from 'lucide-react';
+import { User, Home, Car, Percent, MessageCircle, Calculator } from 'lucide-react';
 import aboutUs from '../assets/about-us.webp';
 
 export default function AboutPage() {
@@ -18,6 +18,23 @@ export default function AboutPage() {
         <div className={`${theme === 'light' ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900' : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'} min-h-screen flex flex-col items-center`}>
 
             <div className="max-w-md w-full rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-6 py-8 flex flex-col items-center space-y-10">
+
+                {/* logo */}
+                <a href="/" className="flex items-center gap-3 group transition-all">
+                    <span className="relative flex items-center">
+                        <span className="rounded-full bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
+                            <Calculator className="w-8 h-8 text-white drop-shadow" />
+                        </span>
+                    </span>
+                    <span className="ml-2">
+                        <span className="block uppercase font-semibold text-white text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
+                            Bank Loan
+                        </span>
+                        <span className="block font-black text-white text-xl sm:text-2xl tracking-wider drop-shadow">
+                            EMI Calculators
+                        </span>
+                    </span>
+                </a>
 
                 {/* Header Section */}
                 <div className="w-full text-center">

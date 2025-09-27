@@ -2,6 +2,7 @@ import { useState } from 'react';
 import age from '../assets/age.webp'; // Replace with actual area conversion image if available
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
+import { Calculator } from 'lucide-react';
 
 const areaUnits = {
     'Square Meters': 1,
@@ -37,6 +38,24 @@ export default function AreaConversionCalculator() {
     return (
         <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50 dark:bg-gradient-to-b dark:from-gray-900 dark:to-purple-900 text-gray-900 dark:text-gray-100 px-4 sm:px-6 py-10 flex flex-col items-center">
             <div className="max-w-lg w-full bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 space-y-6">
+
+                {/* logo */}
+                <a href="/" className="flex items-center gap-3 group transition-all">
+                    <span className="relative flex items-center">
+                        <span className="rounded-full bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
+                            <Calculator className="w-8 h-8 text-white drop-shadow" />
+                        </span>
+                    </span>
+                    <span className="ml-2">
+                        <span className="block uppercase font-semibold text-white text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
+                            Bank Loan
+                        </span>
+                        <span className="block font-black text-white text-xl sm:text-2xl tracking-wider drop-shadow">
+                            EMI Calculators
+                        </span>
+                    </span>
+                </a>
+
                 <h1 className="text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
                     Area Conversion Calculator
                 </h1>

@@ -1,6 +1,25 @@
+import { Calculator } from "lucide-react";
+
 export default function PrivacyPolicy() {
     return (
         <div className="max-w-3xl mx-auto px-4 py-8">
+
+            <a href="/" className="flex items-center gap-3 group transition-all  mb-10 mx-auto w-full">
+                <span className="relative flex items-center">
+                    <span className="rounded-full bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
+                        <Calculator className="w-8 h-8 text-white drop-shadow" />
+                    </span>
+                </span>
+                <span className="ml-2">
+                    <span className="block uppercase font-semibold text-white text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
+                        Bank Loan
+                    </span>
+                    <span className="block font-black text-white text-xl sm:text-2xl tracking-wider drop-shadow">
+                        EMI Calculators
+                    </span>
+                </span>
+            </a>
+
             <h1 className="text-2xl font-bold mb-6">Privacy Policy</h1>
 
             <p>

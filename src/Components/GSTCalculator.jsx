@@ -3,6 +3,7 @@ import { ThemeContext } from '../Theme';
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import GST from '../assets/gst.png';
+import { Calculator } from 'lucide-react';
 
 export default function Gst() {
     const { theme } = useContext(ThemeContext);
@@ -46,6 +47,22 @@ export default function Gst() {
     return (
         <div className={`${theme === 'light' ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900' : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'} min-h-screen flex flex-col items-center px-2 sm:px-4`}>
             <div className="w-full max-w-lg sm:max-w-md rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center space-y-8">
+
+                <a href="/" className="flex items-center gap-3 group transition-all">
+                    <span className="relative flex items-center">
+                        <span className="rounded-full bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
+                            <Calculator className="w-8 h-8 text-white drop-shadow" />
+                        </span>
+                    </span>
+                    <span className="ml-2">
+                        <span className="block uppercase font-semibold text-white text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
+                            Bank Loan
+                        </span>
+                        <span className="block font-black text-white text-xl sm:text-2xl tracking-wider drop-shadow">
+                            EMI Calculators
+                        </span>
+                    </span>
+                </a>
 
                 <div className="text-2xl sm:text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
                     GST Calculator

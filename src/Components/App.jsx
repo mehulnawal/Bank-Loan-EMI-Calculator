@@ -18,8 +18,8 @@ import AgeCalculator from './AgeCalculator';
 import TwoDateCalculator from './TwoDates';
 import AreaConversionCalculator from './AreaCalculator';
 import RandomNumberGenerator from './RandomNumber';
-// import PrivacyPolicy from './PrivacyPolicy';
-// import CookiePolicy from './CookiePolicy';
+import PrivacyPolicy from './Privacy';
+import CookiePolicy from './Cookie';
 
 export default function App() {
   return (
@@ -27,6 +27,7 @@ export default function App() {
       <BrowserRouter>
         {/* <AdPlaceholder> */}
         <Routes>
+          {/* <Route path='/' element={<Navbar />}> */}
           <Route index element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/aboutUs" element={<AboutPage />} />
@@ -42,8 +43,9 @@ export default function App() {
           <Route path="/twoDatesCalculator" element={<TwoDateCalculator />} />
           <Route path="/areaCalculator" element={<AreaConversionCalculator />} />
           <Route path="/randomNumberCalculator" element={<RandomNumberGenerator />} />
-          {/* <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
-          <Route path="/cookiePolicy" element={<CookiePolicy />} /> */}
+          {/* </Route> */}
+          <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/cookie" element={<CookiePolicy />} />
 
           {/* </Route> */}
           <Route path="*" element={<Navigate to="/" />} />

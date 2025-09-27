@@ -8,6 +8,7 @@ import loan from '../assets/loan.png';
 import home from '../assets/home.png';
 import car from '../assets/car.png';
 import gst from '../assets/gst.png';
+import { Calculator } from 'lucide-react';
 
 export default function Categories() {
     const { theme } = useContext(ThemeContext);
@@ -25,6 +26,23 @@ export default function Categories() {
                 } min-h-screen flex flex-col items-center`}
         >
             <div className="w-full max-w-lg sm:max-w-md rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-6 py-8 flex flex-col items-center space-y-8">
+
+                {/* logo */}
+                <a href="/" className="flex items-center gap-3 group transition-all">
+                    <span className="relative flex items-center">
+                        <span className="rounded-full bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
+                            <Calculator className="w-8 h-8 text-white drop-shadow" />
+                        </span>
+                    </span>
+                    <span className="ml-2">
+                        <span className="block uppercase font-semibold text-white text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
+                            Bank Loan
+                        </span>
+                        <span className="block font-black text-white text-xl sm:text-2xl tracking-wider drop-shadow">
+                            EMI Calculators
+                        </span>
+                    </span>
+                </a>
 
                 {/* Heading */}
                 <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5 mb-6 px-3">
@@ -50,32 +68,6 @@ export default function Categories() {
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200 max-w-2xl">
                     Empower your budgeting and investment strategies with tools that offer precision and ease of use, supporting your goal to achieve financial clarity and success.
                 </p>
-
-                {/* <AdPlaceholder /> */}
-
-                {/* Features of the Banking Calculator */}
-                <div className="w-full space-y-4">
-                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                        🔹 Features of the Banking Calculator
-                    </h2>
-                    <ul className="list-disc text-left text-base leading-relaxed text-gray-700 dark:text-gray-200 pl-6 space-y-2">
-                        <li><strong>Loan EMI Calculator:</strong> Find out your monthly payments based on the loan amount, interest rate, and tenure.</li>
-                        <li><strong>Fixed Deposit Calculator:</strong> Estimate your fixed deposit returns over time, including compound interest.</li>
-                        <li><strong>Savings Goal Tracker:</strong> Determine how much you need to save monthly to reach your target amount.</li>
-                        <li><strong>Interest Rate Comparison:</strong> Compare different banks' interest rates to find the best deal.</li>
-                        <li><strong>Mortgage/Auto Loan Estimator:</strong> Know your monthly cost before committing to a major purchase.</li>
-                    </ul>
-                </div>
-
-                {/* About Smart Calculator */}
-                <div className="w-full space-y-4">
-                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-6">
-                        About Smart Calculator
-                    </h2>
-                    <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200 max-w-2xl">
-                        At Calculator, we are dedicated to making complex calculations simple and accessible for everyone. We aim to streamline complex computations, making them accessible and user-friendly for anyone seeking quick and precise results. Your input helps us make our tools better for you.
-                    </p>
-                </div>
 
                 {/* Calculator Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mt-6">
@@ -135,6 +127,32 @@ export default function Categories() {
                             Try Now →
                         </a>
                     </div>
+                </div>
+
+                {/* <AdPlaceholder /> */}
+
+                {/* Features of the Banking Calculator */}
+                <div className="w-full space-y-4">
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
+                        🔹 Features of the Banking Calculator
+                    </h2>
+                    <ul className="list-disc text-left text-base leading-relaxed text-gray-700 dark:text-gray-200 pl-6 space-y-2">
+                        <li><strong>Loan EMI Calculator:</strong> Find out your monthly payments based on the loan amount, interest rate, and tenure.</li>
+                        <li><strong>Fixed Deposit Calculator:</strong> Estimate your fixed deposit returns over time, including compound interest.</li>
+                        <li><strong>Savings Goal Tracker:</strong> Determine how much you need to save monthly to reach your target amount.</li>
+                        <li><strong>Interest Rate Comparison:</strong> Compare different banks' interest rates to find the best deal.</li>
+                        <li><strong>Mortgage/Auto Loan Estimator:</strong> Know your monthly cost before committing to a major purchase.</li>
+                    </ul>
+                </div>
+
+                {/* About Smart Calculator */}
+                <div className="w-full space-y-4">
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-6">
+                        About Smart Calculator
+                    </h2>
+                    <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200 max-w-2xl">
+                        At Calculator, we are dedicated to making complex calculations simple and accessible for everyone. We aim to streamline complex computations, making them accessible and user-friendly for anyone seeking quick and precise results. Your input helps us make our tools better for you.
+                    </p>
                 </div>
 
                 <Footer />
