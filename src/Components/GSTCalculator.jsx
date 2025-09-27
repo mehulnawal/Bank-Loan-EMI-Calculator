@@ -55,43 +55,6 @@ export default function Gst() {
 
                 <img src={GST} alt="Gst Calculator" className="my-5 w-25" />
 
-                <div className="w-full space-y-6">
-                    <div>
-                        <input
-                            type="number"
-                            placeholder="Amount"
-                            value={amount}
-                            onChange={(e) => setAmount(e.target.value)}
-                            className={`w-full px-3 py-2 rounded border ${errors.amount ? "border-red-500" : "border-gray-300"} dark:border-gray-600 focus:outline-none focus:ring`}
-                        />
-                        {errors.amount && <p className="text-red-500 text-sm mt-1">{errors.amount}</p>}
-                    </div>
-                    <div>
-                        <input
-                            type="number"
-                            placeholder="GST Rate (%)"
-                            step="0.01"
-                            value={rate}
-                            onChange={(e) => setRate(e.target.value)}
-                            className={`w-full px-3 py-2 rounded border ${errors.rate ? "border-red-500" : "border-gray-300"} dark:border-gray-600 focus:outline-none focus:ring`}
-                        />
-                        {errors.rate && <p className="text-red-500 text-sm mt-1">{errors.rate}</p>}
-                    </div>
-                    <button
-                        onClick={calculateGST}
-                        className="w-full bg-purple-600 hover:bg-purple-700 rounded text-white py-2 font-medium transition"
-                    >
-                        Calculate GST
-                    </button>
-
-                    {gst !== null && total !== null && (
-                        <div className="text-center mt-4 space-y-1">
-                            <div>GST Amount: <span className="font-bold">{gst}</span></div>
-                            <div>Total Amount: <span className="font-bold">{total}</span></div>
-                        </div>
-                    )}
-                </div>
-
                 <div className="w-full mt-2 p-2 rounded-lg shadow text-lg leading-relaxed ">
                     <ul className="list-disc list-inside space-y-4">
                         <li>
@@ -127,6 +90,43 @@ export default function Gst() {
                             regarding purchases, investments, and tax planning.
                         </li>
                     </ul>
+                </div>
+
+                <div className="w-full space-y-6">
+                    <div>
+                        <input
+                            type="number"
+                            placeholder="Amount"
+                            value={amount}
+                            onChange={(e) => setAmount(e.target.value)}
+                            className={`w-full px-3 py-2 rounded border ${errors.amount ? "border-red-500" : "border-gray-300"} dark:border-gray-600 focus:outline-none focus:ring`}
+                        />
+                        {errors.amount && <p className="text-red-500 text-sm mt-1">{errors.amount}</p>}
+                    </div>
+                    <div>
+                        <input
+                            type="number"
+                            placeholder="GST Rate (%)"
+                            step="0.01"
+                            value={rate}
+                            onChange={(e) => setRate(e.target.value)}
+                            className={`w-full px-3 py-2 rounded border ${errors.rate ? "border-red-500" : "border-gray-300"} dark:border-gray-600 focus:outline-none focus:ring`}
+                        />
+                        {errors.rate && <p className="text-red-500 text-sm mt-1">{errors.rate}</p>}
+                    </div>
+                    <button
+                        onClick={calculateGST}
+                        className="w-full bg-purple-600 hover:bg-purple-700 rounded text-white py-2 font-medium transition"
+                    >
+                        Calculate GST
+                    </button>
+
+                    {gst !== null && total !== null && (
+                        <div className="text-center mt-4 space-y-1">
+                            <div>GST Amount: <span className="font-bold">{gst}</span></div>
+                            <div>Total Amount: <span className="font-bold">{total}</span></div>
+                        </div>
+                    )}
                 </div>
 
 
