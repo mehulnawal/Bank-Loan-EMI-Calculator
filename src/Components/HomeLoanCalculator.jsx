@@ -111,6 +111,42 @@ export default function HomeLoan() {
                     )}
                 </div>
 
+                <div className="w-full mt-2 p-2 rounded-lg shadow text-lg leading-relaxed ">
+                    <ul className="list-disc list-inside space-y-4">
+                        <li>
+                            An online home loan calculator is a convenient tool that helps individuals estimate
+                            their monthly mortgage payments and overall loan costs when purchasing a home.
+                        </li>
+
+                        <li>
+                            Users can input key details such as the loan amount, interest rate, repayment tenure,
+                            and down payment to get an accurate calculation of monthly installments and total interest payable.
+                        </li>
+
+                        <li>
+                            The calculator enables prospective homeowners to assess affordability and choose
+                            a repayment plan that fits their budget, reducing financial stress during the loan tenure.
+                        </li>
+
+                        <li>
+                            Additionally, it allows users to compare multiple loan options from different lenders,
+                            helping them identify the most favorable deal in terms of interest rates, fees, and repayment terms.
+                        </li>
+
+                        <li>
+                            By simulating different scenarios, borrowers can understand the impact of changing
+                            interest rates or loan tenure on monthly payments and total cost, facilitating better financial planning.
+                        </li>
+
+                        <li>
+                            Overall, a home loan calculator empowers users with the information they need to make informed
+                            decisions about home financing, ensuring they secure a loan that aligns with their long-term financial goals.
+                        </li>
+                    </ul>
+                </div>
+
+
+
                 <div className="w-full mt-10 p-4 bg-purple-50 dark:bg-gray-800 rounded-lg shadow text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                     <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
                         About Home Loans

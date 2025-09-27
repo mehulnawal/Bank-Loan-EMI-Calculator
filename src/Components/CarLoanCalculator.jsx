@@ -130,6 +130,51 @@ export default function CarLoan() {
                     )}
                 </div>
 
+                <div className="w-full mt-1 p-2 rounded-lg shadow text-lg leading-relaxed ">
+                    <ul className="list-disc list-inside space-y-4">
+                        <li>
+                            Expanding on this, an online car loan calculator offers several benefits.
+                            Firstly, it allows users to quickly estimate their monthly payments based on
+                            factors such as loan amount, interest rate, and repayment term.
+                        </li>
+
+                        <li>
+                            By inputting these variables, borrowers can gain a clear understanding of
+                            how different loan terms impact their budget, helping them determine the
+                            most affordable option.
+                        </li>
+
+                        <li>
+                            Secondly, an online calculator enables users to compare various financing
+                            options from different lenders.
+                        </li>
+
+                        <li>
+                            By inputting the terms of multiple loans, borrowers can easily compare
+                            interest rates, total loan costs, and repayment schedules, facilitating a
+                            side-by-side evaluation of each offer.
+                        </li>
+
+                        <li>
+                            This empowers borrowers to choose the loan that best suits their financial
+                            needs and goals.
+                        </li>
+
+                        <li>
+                            Furthermore, an online car loan calculator helps users plan for the future
+                            by providing insights into long-term financial commitments.
+                        </li>
+
+                        <li>
+                            By visualizing the total cost of the loan and understanding the impact of
+                            interest rates, borrowers can make strategic decisions about their auto
+                            financing, ensuring they select a loan that aligns with their financial
+                            priorities and capabilities.
+                        </li>
+                    </ul>
+                </div>
+
+
                 {/* About Section */}
                 <div className="w-full mt-10 p-4 bg-purple-50 dark:bg-gray-800 rounded-lg shadow text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                     <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">

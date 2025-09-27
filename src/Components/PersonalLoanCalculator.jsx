@@ -83,6 +83,47 @@ export default function PersonalLoan() {
                     </ul>
                 </div>
 
+                <div className="w-full mt-2 p-2 rounded-lg shadow text-lg leading-relaxed ">
+                    <ul className="list-disc list-inside space-y-4">
+                        <li>
+                            An online personal loan calculator is a valuable tool that provides numerous
+                            benefits to individuals considering taking out a loan. In short, it helps
+                            users quickly estimate potential loan costs, compare different loan options,
+                            and make informed financial decisions.
+                        </li>
+
+                        <li>
+                            In more detail, an online personal loan calculator allows users to input key
+                            variables such as loan amount, interest rate, and repayment term to calculate
+                            monthly payments and total interest costs.
+                        </li>
+
+                        <li>
+                            This enables borrowers to assess affordability and determine a repayment plan
+                            that fits their budget. Additionally, users can experiment with different
+                            scenarios, adjusting loan parameters to see how changes impact repayment
+                            amounts and overall costs.
+                        </li>
+
+                        <li>
+                            Furthermore, an online calculator facilitates comparison shopping by allowing
+                            users to evaluate multiple loan offers from different lenders simultaneously.
+                        </li>
+
+                        <li>
+                            By entering the terms of various loans, borrowers can quickly identify the
+                            most favorable option in terms of interest rates, fees, and repayment terms.
+                        </li>
+
+                        <li>
+                            Overall, an online personal loan calculator empowers borrowers with the
+                            information they need to make educated financial choices, ensuring they secure
+                            a loan that aligns with their needs and financial goals while minimizing
+                            unnecessary costs and risks.
+                        </li>
+                    </ul>
+                </div>
+
                 {/* Input Section */}
                 <div className="w-full space-y-6">
                     <div className="relative">

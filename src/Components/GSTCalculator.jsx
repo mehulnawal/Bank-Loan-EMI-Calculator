@@ -92,6 +92,44 @@ export default function Gst() {
                     )}
                 </div>
 
+                <div className="w-full mt-2 p-2 rounded-lg shadow text-lg leading-relaxed ">
+                    <ul className="list-disc list-inside space-y-4">
+                        <li>
+                            An online GST (Goods and Services Tax) calculator is a digital tool designed
+                            to help businesses and individuals quickly calculate the amount of GST payable
+                            or refundable on a given transaction.
+                        </li>
+
+                        <li>
+                            GST is a consumption tax levied on the supply of goods and services in many
+                            countries worldwide. The calculator typically requires users to input details
+                            such as the taxable amount, GST rate, and the type of transaction.
+                        </li>
+
+                        <li>
+                            The integration of a GST calculator into online banking platforms offers
+                            several benefits for both consumers and businesses.
+                        </li>
+
+                        <li>
+                            Firstly, it streamlines financial transactions by providing users with an
+                            efficient tool to accurately calculate GST amounts on purchases or transactions.
+                        </li>
+
+                        <li>
+                            Moreover, it promotes financial accuracy and compliance by automating
+                            calculations and minimizing the risk of errors in determining GST amounts.
+                        </li>
+
+                        <li>
+                            Additionally, it supports better decision-making by allowing users to quickly
+                            evaluate the impact of GST on various transactions, enabling informed choices
+                            regarding purchases, investments, and tax planning.
+                        </li>
+                    </ul>
+                </div>
+
+
                 <div className="w-full mt-10 p-4 bg-purple-50 dark:bg-gray-800 rounded-lg shadow text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                     <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
                         About GST

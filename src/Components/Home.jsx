@@ -82,28 +82,37 @@ export default function HomePage() {
                             Popular EMI Calculators
                         </h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div href="/categories/personalLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
+                            <div className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
                                 <img src={loan} alt="Personal Loan" className="w-12 h-12 mb-3" />
                                 <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Personal Loan</h3>
                                 <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
                                     Calculate Loan EMI estimate of monthly payments and total cost of a personal loan.
                                 </p>
-
-                                <a className='mt-5 rounded-xl px-4 py-1 border border-purple-800 dark:text-purple-300' href="/personalLoan">Try Now</a>
+                                <a
+                                    className='mt-5 rounded-xl px-4 py-2 bg-purple-700 text-white hover:bg-purple-800 dark:bg-purple-300 dark:text-gray-900 dark:hover:bg-purple-400 transition'
+                                    href="/personalLoan"
+                                >
+                                    Try Now
+                                </a>
                             </div>
 
-
-                            <div href="/categories/homeLoan" className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center ">
-                                <img src={home} alt="Personal Loan" className="w-12 h-12 mb-3" />
+                            <div className="p-5 rounded-xl shadow bg-purple-50 dark:bg-gray-800 hover:shadow-lg transition flex flex-col items-center">
+                                <img src={home} alt="Home Loan" className="w-12 h-12 mb-3" />
                                 <h3 className="font-bold text-purple-700 mt-2 dark:text-purple-300 mb-1">Home Loan</h3>
                                 <p className="text-lg mt-2 text-gray-700 dark:text-gray-200">
                                     Calculate Loan and EMI estimate monthly payments and total cost of a home mortgage.
                                 </p>
 
-                                <a className='mt-5 rounded-xl px-4 py-1 border border-purple-800 dark:text-purple-300' href="/homeLoan">Try Now</a>
+                                <a
+                                    className='mt-5 rounded-xl px-4 py-2 bg-purple-700 text-white hover:bg-purple-800 dark:bg-purple-300 dark:text-gray-900 dark:hover:bg-purple-400 transition'
+                                    href="/homeLoan"
+                                >
+                                    Try Now
+                                </a>
                             </div>
                         </div>
                     </div>
+
 
                     {/* WHAT WE ARE */}
                     <section>
