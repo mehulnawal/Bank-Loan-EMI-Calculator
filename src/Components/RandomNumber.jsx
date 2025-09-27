@@ -40,6 +40,22 @@ export default function RandomNumberGenerator() {
 
                 <img src={randomNumber} alt="Random Number Calculator" className="h-25 mx-auto" />
 
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300 mt-6">
+                    After entering all the details, the calculator will generate the random number within the specified range.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    RNGs offer numerous benefits across a wide range of applications. Firstly, they provide a reliable source of randomness essential for tasks requiring unpredictability, fairness, and security.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Moreover, RNGs are indispensable tools in scientific research and simulations, gaming and gambling, cryptography, software testing, and quality assurance, facilitating various computational tasks with confidence and efficiency.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Furthermore, RNGs promote efficiency and convenience by automating the generation of random numbers, saving time and resources in large-scale computing environments and simulations.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Additionally, RNGs can be customized to meet specific requirements, allowing users to tailor the randomness characteristics to their application needs, further enhancing their versatility and usefulness.
+                </p>
+
                 <h2 className="text-xl font-semibold text-gray-900 dark:text-white">How To Use:</h2>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                     <li>Input the Upper Limit:</li>
@@ -75,22 +91,6 @@ export default function RandomNumberGenerator() {
                         {typeof result === 'number' ? `Random Number: ${result}` : result}
                     </p>
                 )}
-
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300 mt-6">
-                    After entering all the details, the calculator will generate the random number within the specified range.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    RNGs offer numerous benefits across a wide range of applications. Firstly, they provide a reliable source of randomness essential for tasks requiring unpredictability, fairness, and security.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Moreover, RNGs are indispensable tools in scientific research and simulations, gaming and gambling, cryptography, software testing, and quality assurance, facilitating various computational tasks with confidence and efficiency.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Furthermore, RNGs promote efficiency and convenience by automating the generation of random numbers, saving time and resources in large-scale computing environments and simulations.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Additionally, RNGs can be customized to meet specific requirements, allowing users to tailor the randomness characteristics to their application needs, further enhancing their versatility and usefulness.
-                </p>
 
                 <Footer />
             </div>

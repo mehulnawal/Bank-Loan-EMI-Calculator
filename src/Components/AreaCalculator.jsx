@@ -45,6 +45,28 @@ export default function AreaConversionCalculator() {
 
                 <img src={age} alt="Area Conversion Calculator" className="h-25 mx-auto" />
 
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300 mt-6">
+                    After entering all the details calculator will instantly convert your number from one mass to another.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    An area conversion calculator is a practical tool used to convert measurements of area between different units of measurement.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Online area conversion calculators offer numerous benefits, making them indispensable tools for professionals and enthusiasts working with measurements of area.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Firstly, these calculators provide convenience and efficiency by allowing users to swiftly convert area measurements between different units with just a few clicks.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Whether converting square meters to square feet or hectares to acres, users can obtain accurate results in a matter of seconds, saving valuable time and effort.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Moreover, these calculators offer flexibility and versatility, supporting conversion between a wide range of units of area measurement.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Whether working with metric units like square meters and hectares or imperial units like square feet and acres, users can easily convert between different measurement systems to suit their specific needs and preferences.
+                </p>
+
                 <h2 className="text-xl font-semibold text-gray-900 dark:text-white">How To Use:</h2>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                     <li>Enter Number:</li>
@@ -96,27 +118,6 @@ export default function AreaConversionCalculator() {
                     </p>
                 )}
 
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300 mt-6">
-                    After entering all the details calculator will instantly convert your number from one mass to another.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    An area conversion calculator is a practical tool used to convert measurements of area between different units of measurement.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Online area conversion calculators offer numerous benefits, making them indispensable tools for professionals and enthusiasts working with measurements of area.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Firstly, these calculators provide convenience and efficiency by allowing users to swiftly convert area measurements between different units with just a few clicks.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Whether converting square meters to square feet or hectares to acres, users can obtain accurate results in a matter of seconds, saving valuable time and effort.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Moreover, these calculators offer flexibility and versatility, supporting conversion between a wide range of units of area measurement.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Whether working with metric units like square meters and hectares or imperial units like square feet and acres, users can easily convert between different measurement systems to suit their specific needs and preferences.
-                </p>
 
                 <Footer />
             </div>

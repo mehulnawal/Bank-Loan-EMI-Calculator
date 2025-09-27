@@ -49,6 +49,29 @@ export default function AgeCalculator() {
 
                 <img src={age} alt="Age Calculator" className="h-25 mx-auto" />
 
+
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300 mt-6">
+                    The calculator then presents the calculated age to the user, often in years, months, and days or simply in years.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Online age calculators offer several benefits due to their convenience, accuracy, and versatility. Firstly, they provide instant access to age calculation tools, eliminating the need for manual calculations and reducing the chances of errors.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Users can simply input their date of birth and, if necessary, the current date, and receive accurate age results within seconds.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Furthermore, online age calculators are accessible from any internet-enabled device, including computers, smartphones, and tablets. This accessibility ensures that individuals can conveniently determine their age anytime, anywhere, without the need for specialized software or physical calculators.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Whether for personal use, administrative purposes, or professional requirements, online age calculators offer a readily available solution. Moreover, these calculators are user-friendly and intuitive, typically featuring simple interfaces with clear instructions for inputting dates and viewing results.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Users of all ages and technical abilities can easily navigate these tools without any prior training or expertise.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Additionally, many online age calculators offer customization options, allowing users to choose their preferred date formats or adjust settings according to their specific needs. Another significant benefit of online age calculators is their ability to handle complex.
+                </p>
+
                 <h2 className="text-xl font-semibold text-gray-900 dark:text-white">How To Use:</h2>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                     <li>Enter Your Birth Date :</li>
@@ -106,27 +129,6 @@ export default function AgeCalculator() {
                     </p>
                 )}
 
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300 mt-6">
-                    The calculator then presents the calculated age to the user, often in years, months, and days or simply in years.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Online age calculators offer several benefits due to their convenience, accuracy, and versatility. Firstly, they provide instant access to age calculation tools, eliminating the need for manual calculations and reducing the chances of errors.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Users can simply input their date of birth and, if necessary, the current date, and receive accurate age results within seconds.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Furthermore, online age calculators are accessible from any internet-enabled device, including computers, smartphones, and tablets. This accessibility ensures that individuals can conveniently determine their age anytime, anywhere, without the need for specialized software or physical calculators.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Whether for personal use, administrative purposes, or professional requirements, online age calculators offer a readily available solution. Moreover, these calculators are user-friendly and intuitive, typically featuring simple interfaces with clear instructions for inputting dates and viewing results.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Users of all ages and technical abilities can easily navigate these tools without any prior training or expertise.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Additionally, many online age calculators offer customization options, allowing users to choose their preferred date formats or adjust settings according to their specific needs. Another significant benefit of online age calculators is their ability to handle complex.
-                </p>
 
                 <Footer />
             </div>

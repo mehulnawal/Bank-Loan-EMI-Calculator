@@ -58,6 +58,28 @@ export default function TwoDateCalculator() {
 
                 <img src={dates} alt="Two Date Calculator" className="h-25 mx-auto" />
 
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300 mt-6">
+                    After selecting all the details and entering all details, the calculator will calculate the difference between the two dates.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Two-date calculators offer numerous benefits across various contexts, providing convenience, accuracy, and efficiency in managing time-related calculations.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    One of the primary advantages is their ability to quickly and accurately determine the duration between two dates.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Moreover, they can handle different scenarios, including accounting for leap years, adjusting for weekends or holidays, and even considering different calendar systems, ensuring precise results in diverse situations.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Additionally, two-date calculators are invaluable tools for planning and decision-making. Businesses use them to set deadlines, schedule tasks, and forecast project timelines with confidence. Individuals rely on them to organize personal events, manage finances, and track important milestones.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    By providing clear and concise results, these calculators enable users to make informed decisions and allocate their time and resources effectively.
+                </p>
+                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                    Furthermore, the accessibility of online two-date calculators means they are available anytime, anywhere, without the need for specialized software or expertise.
+                </p>
+
                 <h2 className="text-xl font-semibold text-gray-900 dark:text-white">How To Use:</h2>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                     <li>Enter the Date:</li>
@@ -92,28 +114,6 @@ export default function TwoDateCalculator() {
                         Difference: {diff}
                     </p>
                 )}
-
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300 mt-6">
-                    After selecting all the details and entering all details, the calculator will calculate the difference between the two dates.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Two-date calculators offer numerous benefits across various contexts, providing convenience, accuracy, and efficiency in managing time-related calculations.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    One of the primary advantages is their ability to quickly and accurately determine the duration between two dates.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Moreover, they can handle different scenarios, including accounting for leap years, adjusting for weekends or holidays, and even considering different calendar systems, ensuring precise results in diverse situations.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Additionally, two-date calculators are invaluable tools for planning and decision-making. Businesses use them to set deadlines, schedule tasks, and forecast project timelines with confidence. Individuals rely on them to organize personal events, manage finances, and track important milestones.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    By providing clear and concise results, these calculators enable users to make informed decisions and allocate their time and resources effectively.
-                </p>
-                <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Furthermore, the accessibility of online two-date calculators means they are available anytime, anywhere, without the need for specialized software or expertise.
-                </p>
 
                 <Footer />
             </div>
