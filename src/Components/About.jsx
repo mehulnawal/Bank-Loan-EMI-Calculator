@@ -4,6 +4,7 @@ import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { User, Home, Car, Percent, MessageCircle } from 'lucide-react';
+import aboutUs from '../assets/about-us.webp';
 
 export default function AboutPage() {
     const { theme } = useContext(ThemeContext);
@@ -24,6 +25,9 @@ export default function AboutPage() {
                         Who We Are
                     </h1>
                 </div>
+
+                <img src={aboutUs} alt="Personal Loan" className="mx-auto w-40" />
+
 
                 <Breadcrumb paths={paths} />
 
