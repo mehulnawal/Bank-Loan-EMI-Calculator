@@ -8,32 +8,33 @@ import randomNumber from '../assets/randomNumber.webp'
 import { Calculator } from "lucide-react";
 
 export default function EverydayCalculator() {
-
     const paths = [
         { label: "Home", href: "/" },
         { label: "Every Calculator", href: "/everyday" },
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50 dark:bg-gradient-to-b dark:from-gray-900 dark:to-purple-900 text-gray-900 dark:text-gray-100 px-4 sm:px-8 py-10 flex flex-col items-center">
-
-            <div className="w-full max-w-lg sm:max-w-md  bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 space-y-8">
-
-                <a href="/" className="mx-auto w-full flex items-center gap-3 group transition-all">
+        <div className="min-h-screen to-pink-50 bg-gradient-to-b from-gray-900 dark:to-purple-900 text-gray-900 dark:text-gray-100 px-4 sm:px-8 py-10 flex flex-col items-center">
+            <div className="w-full max-w-lg sm:max-w-md bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 space-y-8">
+                <a
+                    href="/"
+                    className="mx-auto w-full flex items-center gap-3 group transition-all"
+                >
                     <span className="relative flex items-center">
-                        <span className="rounded-full bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
-                            <Calculator className="w-8 h-8 text-white drop-shadow" />
+                        <span className="rounded-full bg-purple-600 dark:bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
+                            <Calculator className="w-8 h-8 text-white dark:text-yellow-400 drop-shadow" />
                         </span>
                     </span>
                     <span className="ml-2">
-                        <span className="block uppercase font-semibold text-white text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
+                        <span className="block uppercase font-semibold text-gray-900 dark:text-gray-200 text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
                             Bank Loan
                         </span>
-                        <span className="block font-black text-white text-xl sm:text-2xl tracking-wider drop-shadow">
+                        <span className="block font-black text-gray-900 dark:text-gray-100 text-xl sm:text-2xl tracking-wider drop-shadow">
                             EMI Calculators
                         </span>
                     </span>
                 </a>
+
 
                 <h1 className="text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
                     Everyday Calculator
@@ -57,8 +58,10 @@ export default function EverydayCalculator() {
                 {/* Age Calculator */}
                 <section>
                     <div className="flex items-start space-x-3">
-                        <img src={age} alt="" className="h-15" />
-                        <h2 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Age Calculator</h2>
+                        <img src={age} alt="Age Calculator" className="h-15 w-auto" />
+                        <h2 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
+                            Age Calculator
+                        </h2>
                     </div>
 
                     <p className="mt-5 text-base leading-relaxed text-gray-700 dark:text-gray-200 mb-2">
@@ -74,15 +77,17 @@ export default function EverydayCalculator() {
                     </a>
                 </section>
 
-                {/* two dates calculator */}
+                {/* Two Date Calculator */}
                 <section>
                     <div className="flex items-start space-x-3">
-                        <img src={dates} alt="" className="h-15" />
-                        <h2 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Two Date Calculator</h2>
+                        <img src={dates} alt="Two Date Calculator" className="h-15 w-auto" />
+                        <h2 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
+                            Two Date Calculator
+                        </h2>
                     </div>
 
                     <p className="mt-5 text-base leading-relaxed text-gray-700 dark:text-gray-200 mb-2">
-                        A tool to quickly determine a person's age based on their date of birth and the current date.
+                        A tool to calculate the difference between two dates quickly.
                     </p>
                     <a
                         href="/twoDatesCalculator"
@@ -93,15 +98,17 @@ export default function EverydayCalculator() {
                     </a>
                 </section>
 
-                {/* Random number */}
+                {/* Random Number Generator */}
                 <section>
                     <div className="flex items-start space-x-3">
-                        <img src={randomNumber} alt="" className="h-15" />
-                        <h2 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Random Number Generator</h2>
+                        <img src={randomNumber} alt="Random Number Generator" className="h-15 w-auto" />
+                        <h2 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
+                            Random Number Generator
+                        </h2>
                     </div>
 
                     <p className="mt-4 text-base leading-relaxed text-gray-700 dark:text-gray-200 mb-2">
-                        A tool to quickly determine a person's age based on their date of birth and the current date.
+                        Generate random numbers quickly and easily.
                     </p>
                     <a
                         href="/randomNumberCalculator"
@@ -112,11 +119,13 @@ export default function EverydayCalculator() {
                     </a>
                 </section>
 
-                {/* area  */}
+                {/* Area Conversion */}
                 <section>
                     <div className="flex items-start space-x-3">
-                        <img src={area} alt="" className="h-15" />
-                        <h2 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Area Conversion</h2>
+                        <img src={area} alt="Area Conversion" className="h-15 w-auto" />
+                        <h2 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
+                            Area Conversion
+                        </h2>
                     </div>
 
                     <p className="mt-4 text-base leading-relaxed text-gray-700 dark:text-gray-200 mb-2">
@@ -132,16 +141,17 @@ export default function EverydayCalculator() {
                 </section>
 
                 <section className="pt-6 border-t border-gray-300 dark:border-gray-700">
-                    <h2 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">🔹 Features of the Banking Calculator</h2>
-                    <ul className=" text-gray-700 dark:text-gray-300 space-y-1">
-                        <li className="mt-6 ">✅ Wide Variety of Tools: Covers multiple categories: general math, finance, time/date, health, and daily utility.</li>
-                        <li className="mt-6 ">Suitable for students, professionals, homemakers, and travelers.</li>
-                        <li className="mt-6 ">🔄 Real-Time Results: Instant calculations as you type inputs.</li>
-                        <li className="mt-6 ">Dynamic input/output fields for accurate results.</li>
-                        <li className="mt-6 ">💡 User-Friendly Interface: Simple, clean layouts for each calculator.</li>
-                        <li className="mt-6 ">Responsive design for mobile and desktop use.</li>
-
-                        <li className="mt-6 ">🎯 Common Everyday Use Cases:
+                    <h2 className="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
+                        🔹 Features of the Banking Calculator
+                    </h2>
+                    <ul className="text-gray-700 dark:text-gray-300 space-y-3 list-disc pl-6">
+                        <li>✅ Wide Variety of Tools: Covers multiple categories: general math, finance, time/date, health, and daily utility.</li>
+                        <li>Suitable for students, professionals, homemakers, and travelers.</li>
+                        <li>🔄 Real-Time Results: Instant calculations as you type inputs.</li>
+                        <li>Dynamic input/output fields for accurate results.</li>
+                        <li>💡 User-Friendly Interface: Simple, clean layouts for each calculator.</li>
+                        <li>Responsive design for mobile and desktop use.</li>
+                        <li>🎯 Common Everyday Use Cases:
                             <ul className="list-disc list-inside ml-5 mt-1 space-y-1">
                                 <li>Calculate discounts while shopping.</li>
                                 <li>Split restaurant bills or tips.</li>
@@ -149,8 +159,8 @@ export default function EverydayCalculator() {
                                 <li>Determine paint required for room renovations.</li>
                             </ul>
                         </li>
-                        <li className="mt-6 ">🔒 No Data Storage or Login Required: All calculations are done locally in-browser. No personal information is stored or needed.</li>
-                        <li className="mt-6 ">🧠 Educational and Practical: Great for learning math and finance basics. Provides tooltips and brief explanations for clarity.</li>
+                        <li>🔒 No Data Storage or Login Required: All calculations are done locally in-browser. No personal information is stored or needed.</li>
+                        <li>🧠 Educational and Practical: Great for learning math and finance basics. Provides tooltips and brief explanations for clarity.</li>
                     </ul>
                 </section>
 
@@ -166,3 +176,4 @@ export default function EverydayCalculator() {
         </div>
     );
 }
+

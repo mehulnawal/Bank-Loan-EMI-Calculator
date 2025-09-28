@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { ThemeContext } from '../Theme';
+import { ThemeContext } from "../Theme";
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { Calculator, IndianRupee } from 'lucide-react';
@@ -53,31 +53,33 @@ export default function CarLoan() {
     };
 
     return (
-        <div className={`${theme === 'light'
-            ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900'
-            : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'
-            } min-h-screen flex flex-col items-center px-2 sm:px-4`}
+        <div
+            className={`${theme === "light"
+                ? "bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900"
+                : "bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100"
+                } min-h-screen flex flex-col items-center px-2 sm:px-4`}
         >
-            <div className="w-full max-w-2xl rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center space-y-8">
+            <div className="w-full max-w-2xl rounded-xl mt-8 shadow-lg px-4 sm:px-4 py-6 sm:py-8 flex flex-col items-center space-y-8 bg-white dark:bg-gray-900">
 
-                <a href="/" className="flex items-center gap-3 group transition-all">
+                {/* Logo / Redirect */}
+                <a href="/" className="mx-auto w-full flex items-center gap-3 group transition-all">
                     <span className="relative flex items-center">
-                        <span className="rounded-full bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
-                            <Calculator className="w-8 h-8 text-white drop-shadow" />
+                        <span className="rounded-full bg-purple-600 dark:bg-black/40 p-2 shadow-lg group-hover:scale-110 transition-transform">
+                            <Calculator className="w-8 h-8 text-white dark:text-yellow-400 drop-shadow" />
                         </span>
                     </span>
                     <span className="ml-2">
-                        <span className="block uppercase font-semibold text-white text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
+                        <span className="block uppercase font-semibold text-gray-900 dark:text-gray-200 text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
                             Bank Loan
                         </span>
-                        <span className="block font-black text-white text-xl sm:text-2xl tracking-wider drop-shadow">
+                        <span className="block font-black text-gray-900 dark:text-gray-100 text-xl sm:text-2xl tracking-wider drop-shadow">
                             EMI Calculators
                         </span>
                     </span>
                 </a>
 
                 {/* Header */}
-                <div className="text-2xl sm:text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
+                <div className={`text-2xl sm:text-3xl font-bold ${theme === "light" ? "text-purple-800" : "text-purple-300"} text-center`}>
                     Car Loan Calculator
                 </div>
 
@@ -85,66 +87,30 @@ export default function CarLoan() {
 
                 <img src={car} alt="Car Loan" className="my-4 w-25" />
 
-
                 {/* How to Use Section */}
-                <div className="w-full bg-purple-50 dark:bg-gray-800 rounded-lg p-4 text-gray-700 dark:text-gray-300">
-                    <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
+                <div className="w-full rounded-lg p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+                    <h2 className="text-lg font-semibold mb-2 text-purple-700 dark:text-purple-300">
                         How To Use
                     </h2>
                     <ul className="list-disc pl-5 space-y-1">
                         <li>Enter Loan Amount</li>
                         <li>Enter Interest Rate</li>
-                        <li>Enter Holding (in months)</li>
-                        <li>After entering details, the calculator will show total interest payable and total loan cost.</li>
+                        <li>Enter Tenure (in months)</li>
+                        <li>Click calculate to see EMI, total interest, and total repayment.</li>
                     </ul>
                 </div>
 
-                <div className="w-full mt-1 p-2 rounded-lg shadow text-lg leading-relaxed ">
+                {/* Info Section */}
+                <div className="w-full mt-1 p-2 rounded-lg shadow bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
                     <ul className="list-disc list-inside space-y-4">
-                        <li>
-                            Expanding on this, an online car loan calculator offers several benefits.
-                            Firstly, it allows users to quickly estimate their monthly payments based on
-                            factors such as loan amount, interest rate, and repayment term.
-                        </li>
-
-                        <li>
-                            By inputting these variables, borrowers can gain a clear understanding of
-                            how different loan terms impact their budget, helping them determine the
-                            most affordable option.
-                        </li>
-
-                        <li>
-                            Secondly, an online calculator enables users to compare various financing
-                            options from different lenders.
-                        </li>
-
-                        <li>
-                            By inputting the terms of multiple loans, borrowers can easily compare
-                            interest rates, total loan costs, and repayment schedules, facilitating a
-                            side-by-side evaluation of each offer.
-                        </li>
-
-                        <li>
-                            This empowers borrowers to choose the loan that best suits their financial
-                            needs and goals.
-                        </li>
-
-                        <li>
-                            Furthermore, an online car loan calculator helps users plan for the future
-                            by providing insights into long-term financial commitments.
-                        </li>
-
-                        <li>
-                            By visualizing the total cost of the loan and understanding the impact of
-                            interest rates, borrowers can make strategic decisions about their auto
-                            financing, ensuring they select a loan that aligns with their financial
-                            priorities and capabilities.
-                        </li>
+                        <li>Estimate monthly payments based on loan amount, interest rate, and repayment term.</li>
+                        <li>Compare different loan options and assess affordability.</li>
+                        <li>Plan long-term commitments by visualizing total repayment and interest impact.</li>
                     </ul>
                 </div>
 
                 {/* Input Section */}
-                <div className="w-full space-y-6">
+                <div className="w-full space-y-6 bg-white p-4 rounded-lg shadow">
                     <div className="relative">
                         <IndianRupee className="absolute top-3 left-3 w-6 h-6 text-gray-400 dark:text-gray-500" />
                         <input
@@ -152,7 +118,7 @@ export default function CarLoan() {
                             placeholder="Loan Amount"
                             value={principal}
                             onChange={(e) => setPrincipal(e.target.value)}
-                            className={`w-full px-10 py-2 rounded border ${errors.principal ? "border-red-500" : "border-gray-300"} dark:border-gray-600 focus:outline-none focus:ring`}
+                            className={`w-full px-10 py-2 rounded border ${errors.principal ? "border-red-500" : "border-gray-300 dark:border-gray-600"} focus:outline-none focus:ring bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100`}
                         />
                         {errors.principal && <p className="text-red-500 text-sm mt-1">{errors.principal}</p>}
                     </div>
@@ -163,7 +129,7 @@ export default function CarLoan() {
                         step="0.01"
                         value={rate}
                         onChange={(e) => setRate(e.target.value)}
-                        className={`w-full px-3 py-2 rounded border ${errors.rate ? "border-red-500" : "border-gray-300"} dark:border-gray-600 focus:outline-none focus:ring`}
+                        className={`w-full px-3 py-2 rounded border ${errors.rate ? "border-red-500" : "border-gray-300 dark:border-gray-600"} focus:outline-none focus:ring bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100`}
                     />
                     {errors.rate && <p className="text-red-500 text-sm mt-1">{errors.rate}</p>}
 
@@ -172,7 +138,7 @@ export default function CarLoan() {
                         placeholder="Loan Tenure (Months)"
                         value={tenure}
                         onChange={(e) => setTenure(e.target.value)}
-                        className={`w-full px-3 py-2 rounded border ${errors.tenure ? "border-red-500" : "border-gray-300"} dark:border-gray-600 focus:outline-none focus:ring`}
+                        className={`w-full px-3 py-2 rounded border ${errors.tenure ? "border-red-500" : "border-gray-300 dark:border-gray-600"} focus:outline-none focus:ring bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100`}
                     />
                     {errors.tenure && <p className="text-red-500 text-sm mt-1">{errors.tenure}</p>}
 
@@ -190,25 +156,14 @@ export default function CarLoan() {
                     )}
                 </div>
 
-
-
                 {/* About Section */}
-                <div className="w-full mt-10 p-4 bg-purple-50 dark:bg-gray-800 rounded-lg shadow text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                    <h2 className="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">
+                <div className="w-full mt-10 p-4 rounded-lg shadow bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+                    <h2 className="text-lg font-semibold mb-2 text-purple-700 dark:text-purple-300">
                         About Car Loan Calculator
                     </h2>
-                    <p>
-                        An online car loan calculator offers several benefits. Firstly, it allows users to quickly estimate monthly payments based on factors such as loan amount, interest rate, and repayment term.
-                    </p>
-                    <p className="mt-3">
-                        By inputting these variables, borrowers can clearly see how different loan terms impact their budget, helping them determine the most affordable option.
-                    </p>
-                    <p className="mt-3">
-                        Secondly, users can compare financing options from different lenders by entering the terms of multiple loans, making it easier to identify the best deal.
-                    </p>
-                    <p className="mt-3">
-                        Furthermore, this calculator helps plan long-term financial commitments by showing total loan cost and the effect of interest rates—empowering borrowers to make informed decisions aligned with their priorities.
-                    </p>
+                    <p>An online car loan calculator quickly estimates monthly payments based on loan amount, interest rate, and repayment term.</p>
+                    <p className="mt-3">Compare financing options from different lenders to identify the best deal.</p>
+                    <p className="mt-3">Understand long-term commitments by viewing total repayment and interest impact.</p>
                 </div>
 
                 <Footer />

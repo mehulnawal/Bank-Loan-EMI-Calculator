@@ -34,21 +34,25 @@ export default function RandomNumberGenerator() {
         <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50 dark:bg-gradient-to-b dark:from-gray-900 dark:to-purple-900 text-gray-900 dark:text-gray-100 px-4 sm:px-6 py-10 flex flex-col items-center">
             <div className="max-w-lg w-full bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 space-y-6">
 
-                <a href="/" className="flex items-center gap-3 group transition-all">
+                <a
+                    href="/"
+                    className="mx-auto w-full flex items-center gap-3 group transition-all"
+                >
                     <span className="relative flex items-center">
-                        <span className="rounded-full bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
-                            <Calculator className="w-8 h-8 text-white drop-shadow" />
+                        <span className="rounded-full bg-purple-600 dark:bg-black/40 p-2 shadow-lg group-hover:scale-110 transition-transform">
+                            <Calculator className="w-8 h-8 text-white dark:text-yellow-400 drop-shadow" />
                         </span>
                     </span>
                     <span className="ml-2">
-                        <span className="block uppercase font-semibold text-white text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
+                        <span className="block uppercase font-semibold text-gray-900 dark:text-gray-200 text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
                             Bank Loan
                         </span>
-                        <span className="block font-black text-white text-xl sm:text-2xl tracking-wider drop-shadow">
+                        <span className="block font-black text-gray-900 dark:text-gray-100 text-xl sm:text-2xl tracking-wider drop-shadow">
                             EMI Calculators
                         </span>
                     </span>
                 </a>
+
 
                 <h1 className="text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
                     Random Number Generator

@@ -14,27 +14,74 @@ export default function AboutPage() {
         { label: "About", href: "/about" }
     ];
 
+    const calculatorTypes = [
+        {
+            icon: User,
+            title: "Personal Loan Calculator",
+            colorLight: "text-purple-700",
+            colorDark: "dark:text-purple-300",
+            bgLight: "bg-purple-100",
+            bgDark: "dark:bg-purple-900",
+            description:
+                "Effortlessly calculate your personal loan EMIs, whether for medical needs, home improvements, or other personal expenditures. Our tool helps you determine the best loan terms to suit your budget and repayment capacity.",
+        },
+        {
+            icon: Home,
+            title: "Home Loan Calculator",
+            colorLight: "text-pink-800",
+            colorDark: "dark:text-pink-300",
+            bgLight: "bg-pink-100",
+            bgDark: "dark:bg-pink-900",
+            description:
+                "Plan your path to homeownership with our detailed home loan calculator. Analyze different tenures, interest rates, and monthly EMIs to make informed decisions for your mortgage financing.",
+        },
+        {
+            icon: Car,
+            title: "Car Loan Calculator",
+            colorLight: "text-blue-800",
+            colorDark: "dark:text-blue-300",
+            bgLight: "bg-blue-100",
+            bgDark: "dark:bg-blue-900",
+            description:
+                "Drive your dreams with confidence. Our car loan calculator provides precise EMI estimates, supporting you to select the ideal car loan amount and repayment schedule.",
+        },
+        {
+            icon: Percent,
+            title: "GST Calculator",
+            colorLight: "text-green-800",
+            colorDark: "dark:text-green-300",
+            bgLight: "bg-green-100",
+            bgDark: "dark:bg-green-900",
+            description:
+                "Navigate GST complexities with ease. Calculate GST amounts, ascertain inclusive and exclusive prices, and ensure compliance with our comprehensive GST calculator.",
+        },
+    ];
+
     return (
         <div className={`${theme === 'light' ? 'bg-gradient-to-b from-purple-50 to-pink-50 text-gray-900' : 'bg-gradient-to-b from-gray-900 to-purple-900 text-gray-100'} min-h-screen flex flex-col items-center`}>
 
             <div className="max-w-md w-full rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-6 py-8 flex flex-col items-center space-y-10">
 
                 {/* logo */}
-                <a href="/" className="flex items-center gap-3 group transition-all">
+                <a
+                    href="/"
+                    className="mx-auto w-full flex items-center gap-3 group transition-all"
+                >
                     <span className="relative flex items-center">
-                        <span className="rounded-full bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
-                            <Calculator className="w-8 h-8 text-white drop-shadow" />
+                        <span className="rounded-full bg-purple-600 dark:bg-black/40 p-2 shadow-lg group-hover:scale-110 transition-transform">
+                            <Calculator className="w-8 h-8 text-white dark:text-yellow-400 drop-shadow" />
                         </span>
                     </span>
                     <span className="ml-2">
-                        <span className="block uppercase font-semibold text-white text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
+                        <span className="block uppercase font-semibold text-gray-900 dark:text-gray-200 text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
                             Bank Loan
                         </span>
-                        <span className="block font-black text-white text-xl sm:text-2xl tracking-wider drop-shadow">
+                        <span className="block font-black text-gray-900 dark:text-gray-100 text-xl sm:text-2xl tracking-wider drop-shadow">
                             EMI Calculators
                         </span>
                     </span>
                 </a>
+
 
                 {/* Header Section */}
                 <div className="w-full text-center">
@@ -73,57 +120,28 @@ export default function AboutPage() {
                     </p>
                 </div>
 
-                {/* Calculator Types with Icons - Horizontal Icon and Heading */}
                 <div className="w-full space-y-8">
-                    {[{
-                        icon: User,
-                        title: 'Personal Loan Calculator',
-                        colorLight: 'purple-700',
-                        colorDark: 'purple-300',
-                        bgLight: 'purple-100',
-                        bgDark: 'purple-900',
-                        description: 'Effortlessly calculate your personal loan EMIs, whether for medical needs, home improvements, or other personal expenditures. Our tool helps you determine the best loan terms to suit your budget and repayment capacity.'
-                    }, {
-                        icon: Home,
-                        title: 'Home Loan Calculator',
-                        colorLight: 'pink-800',
-                        colorDark: 'pink-300',
-                        bgLight: 'pink-100',
-                        bgDark: 'pink-900',
-                        description: 'Plan your path to homeownership with our detailed home loan calculator. Analyze different tenures, interest rates, and monthly EMIs to make informed decisions for your mortgage financing.'
-                    }, {
-                        icon: Car,
-                        title: 'Car Loan Calculator',
-                        colorLight: 'blue-800',
-                        colorDark: 'blue-300',
-                        bgLight: 'blue-100',
-                        bgDark: 'blue-900',
-                        description: 'Drive your dreams with confidence. Our car loan calculator provides precise EMI estimates, supporting you to select the ideal car loan amount and repayment schedule.'
-                    }, {
-                        icon: Percent,
-                        title: 'GST Calculator',
-                        colorLight: 'green-800',
-                        colorDark: 'green-300',
-                        bgLight: 'green-100',
-                        bgDark: 'green-900',
-                        description: 'Navigate GST complexities with ease. Calculate GST amounts, ascertain inclusive and exclusive prices, and ensure compliance with our comprehensive GST calculator.'
-                    }].map(({ icon: Icon, title, colorLight, colorDark, bgLight, bgDark, description }) => (
-                        <div key={title} className={`w-full text-left border rounded-xl py-6 px-6 flex flex-col sm:flex-row sm:items-center gap-6 bg-${bgLight} dark:bg-${bgDark}`}>
-                            <div>
-                                <div className={`flex items-center gap-4 sm:mb-0`}>
-                                    <Icon className={`w-7 h-7 text-${colorLight} dark:text-${colorDark}`} />
-                                    <h3 className={`text-2xl font-semibold text-${colorLight} dark:text-${colorDark}`}>
-                                        {title}
-                                    </h3>
+                    {calculatorTypes.map(
+                        ({ icon: Icon, title, colorLight, colorDark, bgLight, bgDark, description }) => (
+                            <div
+                                key={title}
+                                className={`w-full text-left border rounded-xl py-6 px-6 flex flex-col sm:flex-row sm:items-center gap-6 ${bgLight} ${bgDark}`}
+                            >
+                                <div>
+                                    <div className="flex items-center gap-4 sm:mb-0">
+                                        <Icon className={`w-7 h-7 ${colorLight} ${colorDark}`} />
+                                        <h3 className={`text-2xl font-semibold ${colorLight} ${colorDark}`}>
+                                            {title}
+                                        </h3>
+                                    </div>
+                                    <p className={`text-sm mt-4 leading-relaxed max-w-xl ${colorLight} ${colorDark}`}>
+                                        {description}
+                                    </p>
                                 </div>
-                                <p className={`text-sm mt-4 text-${colorLight} dark:text-${colorDark} leading-relaxed max-w-xl`}>
-                                    {description}
-                                </p>
                             </div>
-                        </div>
-                    ))}
+                        )
+                    )}
                 </div>
-
 
                 {/* Why Choose Us? */}
                 <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-6 px-6">

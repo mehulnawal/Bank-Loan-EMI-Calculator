@@ -28,21 +28,25 @@ export default function Categories() {
             <div className="w-full max-w-lg sm:max-w-md rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-6 py-8 flex flex-col items-center space-y-8">
 
                 {/* logo */}
-                <a href="/" className="flex items-center gap-3 group transition-all">
+                <a
+                    href="/"
+                    className="mx-auto w-full flex items-center gap-3 group transition-all"
+                >
                     <span className="relative flex items-center">
-                        <span className="rounded-full bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
-                            <Calculator className="w-8 h-8 text-white drop-shadow" />
+                        <span className="rounded-full bg-purple-600 dark:bg-black/40 p-2 shadow-lg group-hover:scale-110 transition-transform">
+                            <Calculator className="w-8 h-8 text-white dark:text-yellow-400 drop-shadow" />
                         </span>
                     </span>
                     <span className="ml-2">
-                        <span className="block uppercase font-semibold text-white text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
+                        <span className="block uppercase font-semibold text-gray-900 dark:text-gray-200 text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
                             Bank Loan
                         </span>
-                        <span className="block font-black text-white text-xl sm:text-2xl tracking-wider drop-shadow">
+                        <span className="block font-black text-gray-900 dark:text-gray-100 text-xl sm:text-2xl tracking-wider drop-shadow">
                             EMI Calculators
                         </span>
                     </span>
                 </a>
+
 
                 {/* Heading */}
                 <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5 mb-6 px-3">
@@ -73,61 +77,63 @@ export default function Categories() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mt-6">
 
                     {/* Personal Loan */}
-                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-lg">
-                        <img src={loan} alt="Personal Loan" className="w-16 h-16 mb-4" />
+                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-xl hover:scale-[1.02]">
+                        <img src={loan} alt="Personal Loan" className="w-16 h-16 mb-4 drop-shadow" />
                         <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
                             Personal Loan Calculator
                         </h3>
-                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6">
+                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                             Accurately compute your personal loan EMIs and total payable amount to optimize your repayment strategy and budget effectively.
                         </p>
-                        <a href="/personalLoan" className="text-purple-600 font-semibold hover:underline">
+                        <a href="/personalLoan" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>
 
                     {/* Home Loan */}
-                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-lg">
-                        <img src={home} alt="Home Loan" className="w-16 h-16 mb-4" />
+                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-xl hover:scale-[1.02]">
+                        <img src={home} alt="Home Loan" className="w-16 h-16 mb-4 drop-shadow" />
                         <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
                             Home Loan Calculator
                         </h3>
-                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6">
+                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                             Evaluate different home loan options, repayment tenures, and interest rates to plan for your ideal mortgage with confidence.
                         </p>
-                        <a href="/homeLoan" className="text-purple-600 font-semibold hover:underline">
+                        <a href="/homeLoan" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>
 
                     {/* Car Loan */}
-                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-lg">
-                        <img src={car} alt="Car Loan" className="w-16 h-16 mb-4" />
+                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-xl hover:scale-[1.02]">
+                        <img src={car} alt="Car Loan" className="w-16 h-16 mb-4 drop-shadow" />
                         <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
                             Car Loan Calculator
                         </h3>
-                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6">
+                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                             Compute your car loan EMIs precisely and assess total repayment to make informed choices for your vehicle financing.
                         </p>
-                        <a href="/carLoan" className="text-purple-600 font-semibold hover:underline">
+                        <a href="/carLoan" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>
 
                     {/* GST */}
-                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-lg">
-                        <img src={gst} alt="GST Calculator" className="w-16 h-16 mb-4" />
+                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow flex flex-col items-center text-center transition hover:shadow-xl hover:scale-[1.02]">
+                        <img src={gst} alt="GST Calculator" className="w-16 h-16 mb-4 drop-shadow" />
                         <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
                             GST Calculator
                         </h3>
-                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6">
+                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                             Simplify your GST-related calculations for goods and services, ensuring tax compliance while managing your finances efficiently.
                         </p>
-                        <a href="/gstCalculator" className="text-purple-600 font-semibold hover:underline">
+                        <a href="/gstCalculator" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>
+
                 </div>
+
 
                 {/* <AdPlaceholder /> */}
 
