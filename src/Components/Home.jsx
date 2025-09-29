@@ -41,6 +41,7 @@ export default function HomePage() {
                     </span>
                 </a>
 
+                <AdPlaceholder />
 
 
                 <div className="text-2xl sm:text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">

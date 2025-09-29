@@ -1,12 +1,9 @@
-import { useContext, useEffect, useRef } from 'react';
-import { ThemeContext } from '../Theme';
+import { useEffect, useRef } from 'react';
 
 export default function AdPlaceholder() {
-    const { theme } = useContext(ThemeContext);
     const adRef = useRef(null);
 
     useEffect(() => {
-        // Push the ad once the element exists in the DOM
         if (adRef.current) {
             try {
                 (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -22,27 +19,31 @@ export default function AdPlaceholder() {
             {/* Google AdSense */}
             <ins
                 ref={adRef}
-                className={`adsbygoogle block rounded select-none 
-          ${theme === 'light' ? 'bg-gray-100 border border-gray-400' : 'bg-gray-800 border border-gray-600'}`}
+                className="adsbygoogle block select-none"
                 style={{
                     display: 'block',
                     width: '100%',
-                    maxWidth: '728px', // optional max width for desktop
+                    maxWidth: '728px',
                     height: '90px',
-                    margin: '0 auto',   // center ad
+                    margin: '0 auto',
                 }}
-                data-ad-client="ca-pub-XXXXXXXXXXXXXXX" // ✅ replace with your publisher ID
-                data-ad-slot="YYYYYYYYYY"               // ✅ replace with your ad slot ID
+                data-ad-client="ca-pub-6083027118282589"
+                data-ad-slot="4154300839"
                 data-ad-format="auto"
                 data-full-width-responsive="true"
-            ></ins>
+            />
 
-            {/* Fallback box for development or when ad fails to load */}
-            {/* <div
-                className={`w-full h-20 border border-dashed rounded flex justify-center items-center select-none mt-2 ${theme === 'light' ? 'bg-gray-100 border-gray-400 text-gray-500' : 'bg-gray-800 border-gray-600 text-gray-400'}`}
+            {/* Tailwind dark/light fallback box */}
+            <div
+                className="
+                    w-full h-20 border border-dashed rounded 
+                    flex justify-center items-center select-none mt-2
+                    bg-gray-100 border-gray-400 text-gray-500
+                    dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400
+                "
             >
                 Advertisement (Demo Preview)
-            </div> */}
+            </div>
         </div>
     );
 }
