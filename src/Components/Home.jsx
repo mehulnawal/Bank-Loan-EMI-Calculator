@@ -1,10 +1,9 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../Theme';
-import AdPlaceholder from './AdPlaceholders';
 import Footer from './Footer';
+import AdPlaceholder from './AdPlaceholders';
 import Breadcrumb from './Breadcrumb';
 import { Calculator, Home, User, Car, Percent } from 'lucide-react';
-
 import loan from '../assets/loan.png';
 import home from '../assets/home.png';
 import aboutUs from '../assets/about-us.webp';

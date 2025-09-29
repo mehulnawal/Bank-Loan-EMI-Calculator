@@ -20,6 +20,7 @@ import AreaConversionCalculator from './AreaCalculator';
 import RandomNumberGenerator from './RandomNumber';
 import PrivacyPolicy from './Privacy';
 import CookiePolicy from './Cookie';
+import { Demo } from './demo';
 
 export default function App() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
           {/* </Route> */}
           <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/cookie" element={<CookiePolicy />} />
+          <Route path="/demo" element={<Demo />} />
 
           {/* </Route> */}
           <Route path="*" element={<Navigate to="/" />} />
