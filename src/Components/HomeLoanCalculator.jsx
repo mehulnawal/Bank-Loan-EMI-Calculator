@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Breadcrumb from "./Breadcrumb";
 import { Calculator, IndianRupee } from "lucide-react";
 import home from "../assets/home.png";
+import AdPlaceholder from './AdPlaceholders';
 
 export default function HomeLoan() {
     const { theme } = useContext(ThemeContext);
@@ -60,6 +61,24 @@ export default function HomeLoan() {
                 } min-h-screen flex flex-col items-center px-2 sm:px-4`}
         >
             <div className="w-full max-w-2xl rounded-xl mt-8 shadow-lg px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center space-y-8 bg-white dark:bg-gray-900">
+
+                <a href="/" className="mx-auto w-full flex items-center gap-3 group transition-all">
+                    <span className="relative flex items-center">
+                        <span className="rounded-full bg-purple-600 dark:bg-black/40 p-2 shadow-lg group-hover:scale-110 transition-transform">
+                            <Calculator className="w-8 h-8 text-white dark:text-yellow-400 drop-shadow" />
+                        </span>
+                    </span>
+                    <span className="ml-2">
+                        <span className="block uppercase font-semibold text-gray-900 dark:text-gray-200 text-sm tracking-widest opacity-90 group-hover:tracking-[.20em] transition-all">
+                            Bank Loan
+                        </span>
+                        <span className="block font-black text-gray-900 dark:text-gray-100 text-xl sm:text-2xl tracking-wider drop-shadow">
+                            EMI Calculators
+                        </span>
+                    </span>
+                </a>
+
+                <AdPlaceholder />
 
                 {/* Header */}
                 <div className={`text-2xl sm:text-3xl font-bold ${theme === "light" ? "text-purple-800" : "text-purple-300"} text-center`}>

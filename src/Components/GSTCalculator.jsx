@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import GST from '../assets/gst.png';
 import { Calculator } from 'lucide-react';
+import AdPlaceholder from './AdPlaceholders';
 
 export default function Gst() {
     const { theme } = useContext(ThemeContext);
@@ -64,6 +65,8 @@ export default function Gst() {
                         </span>
                     </span>
                 </a>
+
+                <AdPlaceholder />
 
                 <div className="text-2xl sm:text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
                     GST Calculator

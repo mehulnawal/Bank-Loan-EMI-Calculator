@@ -82,6 +82,8 @@ export default function AboutPage() {
                     </span>
                 </a>
 
+                <AdPlaceholder />
+
 
                 {/* Header Section */}
                 <div className="w-full text-center">

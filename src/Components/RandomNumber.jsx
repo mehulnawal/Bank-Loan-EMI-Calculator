@@ -3,6 +3,7 @@ import randomNumber from '../assets/randomNumber.webp';
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { Calculator } from 'lucide-react';
+import AdPlaceholder from "./AdPlaceholders";
 
 export default function RandomNumberGenerator() {
     const paths = [
@@ -52,6 +53,8 @@ export default function RandomNumberGenerator() {
                         </span>
                     </span>
                 </a>
+
+                <AdPlaceholder />
 
 
                 <h1 className="text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">

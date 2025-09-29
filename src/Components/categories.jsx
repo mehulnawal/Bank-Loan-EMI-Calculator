@@ -47,6 +47,8 @@ export default function Categories() {
                     </span>
                 </a>
 
+                <AdPlaceholder />
+
 
                 {/* Heading */}
                 <div className="w-full text-center bg-purple-100 dark:bg-purple-900 border rounded-xl py-5 mb-6 px-3">

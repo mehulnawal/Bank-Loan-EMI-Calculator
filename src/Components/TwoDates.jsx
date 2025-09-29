@@ -3,6 +3,7 @@ import dates from '../assets/dates.webp';
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { Calculator } from 'lucide-react';
+import AdPlaceholder from "./AdPlaceholders";
 
 export default function TwoDateCalculator() {
     const paths = [
@@ -69,6 +70,8 @@ export default function TwoDateCalculator() {
                         </span>
                     </span>
                 </a>
+
+                <AdPlaceholder />
 
 
                 <h1 className="text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">

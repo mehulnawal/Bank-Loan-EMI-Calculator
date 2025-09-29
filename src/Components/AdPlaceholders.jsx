@@ -34,7 +34,7 @@ export default function AdPlaceholder() {
             />
 
             {/* Tailwind dark/light fallback box */}
-            <div
+            {/* <div
                 className="
                     w-full h-20 border border-dashed rounded 
                     flex justify-center items-center select-none mt-2
@@ -43,7 +43,7 @@ export default function AdPlaceholder() {
                 "
             >
                 Advertisement (Demo Preview)
-            </div>
+            </div> */}
         </div>
     );
 }

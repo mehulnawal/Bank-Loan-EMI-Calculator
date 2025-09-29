@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { Calculator, IndianRupee } from 'lucide-react';
 import car from '../assets/car.png';
+import AdPlaceholder from './AdPlaceholders';
 
 export default function CarLoan() {
     const { theme } = useContext(ThemeContext);
@@ -77,6 +78,8 @@ export default function CarLoan() {
                         </span>
                     </span>
                 </a>
+
+                <AdPlaceholder />
 
                 {/* Header */}
                 <div className={`text-2xl sm:text-3xl font-bold ${theme === "light" ? "text-purple-800" : "text-purple-300"} text-center`}>

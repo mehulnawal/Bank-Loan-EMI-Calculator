@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { Calculator, IndianRupee } from 'lucide-react';
 import loan from '../assets/loan.png';
+import AdPlaceholder from './AdPlaceholders';
 
 export default function PersonalLoan() {
     const { theme } = useContext(ThemeContext);
@@ -81,6 +82,8 @@ export default function PersonalLoan() {
                         </span>
                     </span>
                 </a>
+
+                <AdPlaceholder />
 
                 {/* Page Title */}
                 <div className="text-2xl sm:text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">

@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import age from '../assets/age.webp'; // Replace with actual area conversion image if available
+import age from '../assets/age.webp';
 import Footer from './Footer';
 import Breadcrumb from './Breadcrumb';
 import { Calculator } from 'lucide-react';
+import AdPlaceholder from "./AdPlaceholders";
 
 const areaUnits = {
     'Square Meters': 1,
@@ -58,6 +59,8 @@ export default function AreaConversionCalculator() {
                         </span>
                     </span>
                 </a>
+
+                <AdPlaceholder />
 
 
                 <h1 className="text-3xl font-bold text-purple-800 dark:text-purple-300 text-center">
