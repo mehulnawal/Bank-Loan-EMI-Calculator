@@ -10,7 +10,7 @@ import AdPlaceholder from "./AdPlaceholders";
 
 export default function EverydayCalculator() {
     const paths = [
-        { label: "Home", href: "/" },
+        { label: "Home", href: "#/" },
         { label: "Every Calculator", href: "/everyday" },
     ];
 
@@ -18,7 +18,7 @@ export default function EverydayCalculator() {
         <div className="min-h-screen to-pink-50 bg-gradient-to-b from-gray-900 dark:to-purple-900 text-gray-900 dark:text-gray-100 px-4 sm:px-8 py-10 flex flex-col items-center">
             <div className="w-full max-w-lg sm:max-w-md bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 space-y-8">
                 <a
-                    href="/"
+                    href="#/"
                     className="mx-auto w-full flex items-center gap-3 group transition-all"
                 >
                     <span className="relative flex items-center">
@@ -72,7 +72,7 @@ export default function EverydayCalculator() {
                     </p>
 
                     <a
-                        href="/ageCalculator"
+                        href="#/ageCalculator"
                         rel="noopener noreferrer"
                         className="inline-block text-purple-600 dark:text-purple-400 hover:underline mb-6"
                     >
@@ -93,7 +93,7 @@ export default function EverydayCalculator() {
                         A tool to calculate the difference between two dates quickly.
                     </p>
                     <a
-                        href="/twoDatesCalculator"
+                        href="#/twoDatesCalculator"
                         rel="noopener noreferrer"
                         className="inline-block text-purple-600 dark:text-purple-400 hover:underline mb-6"
                     >
@@ -114,7 +114,7 @@ export default function EverydayCalculator() {
                         Generate random numbers quickly and easily.
                     </p>
                     <a
-                        href="/randomNumberCalculator"
+                        href="#/randomNumberCalculator"
                         rel="noopener noreferrer"
                         className="inline-block text-purple-600 dark:text-purple-400 hover:underline mb-6"
                     >
@@ -135,7 +135,7 @@ export default function EverydayCalculator() {
                         A tool to convert between different units of area measurement, such as square meters, square feet, acres, etc.
                     </p>
                     <a
-                        href="/areaCalculator"
+                        href="#/areaCalculator"
                         rel="noopener noreferrer"
                         className="inline-block text-purple-600 dark:text-purple-400 hover:underline mb-6"
                     >

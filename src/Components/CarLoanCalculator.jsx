@@ -15,7 +15,7 @@ export default function CarLoan() {
     const [errors, setErrors] = useState({});
 
     const paths = [
-        { label: "Home", href: "/" },
+        { label: "Home", href: "#/" },
         { label: "Categories", href: "/categories" },
         { label: "Car Loan", href: "/carLoan" },
     ];
@@ -63,7 +63,7 @@ export default function CarLoan() {
             <div className="w-full max-w-2xl rounded-xl mt-8 shadow-lg px-4 sm:px-4 py-6 sm:py-8 flex flex-col items-center space-y-8 bg-white dark:bg-gray-900">
 
                 {/* Logo / Redirect */}
-                <a href="/" className="mx-auto w-full flex items-center gap-3 group transition-all">
+                <a href="#/" className="mx-auto w-full flex items-center gap-3 group transition-all">
                     <span className="relative flex items-center">
                         <span className="rounded-full bg-purple-600 dark:bg-black/40 p-2 shadow-lg group-hover:scale-110 transition-transform">
                             <Calculator className="w-8 h-8 text-white dark:text-yellow-400 drop-shadow" />

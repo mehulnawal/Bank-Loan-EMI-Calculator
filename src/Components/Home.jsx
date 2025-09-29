@@ -13,7 +13,7 @@ export default function HomePage() {
     const { theme } = useContext(ThemeContext);
 
     const paths = [
-        { label: "Home", href: "/" },
+        { label: "Home", href: "#/" },
     ];
 
     return (
@@ -22,7 +22,7 @@ export default function HomePage() {
             <div className="w-full max-w-lg sm:max-w-md rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center space-y-8">
 
                 <a
-                    href="/"
+                    href="#/"
                     className="mx-auto w-full flex items-center gap-3 group transition-all"
                 >
                     <span className="relative flex items-center">
@@ -52,7 +52,7 @@ export default function HomePage() {
                         Explore Our Extensive Suite of Loan EMI Calculators for Informed Financial Planning
                     </div>
                     <a
-                        href="/categories"
+                        href="#/categories"
                         className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-2 rounded-lg shadow transition"
                         aria-label="Explore Loan Categories"
                     >
@@ -78,16 +78,14 @@ export default function HomePage() {
                         </div>
 
                         <div className='flex  items-center space-x-3'>
-                            <a
-                                href="/categories"
+                            <a href="#/categories"
                                 className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-2 rounded-lg shadow transition"
                                 aria-label="Explore Loan Categories"
                             >
                                 Bank Loan Calculator
                             </a>
 
-                            <a
-                                href="/everyday"
+                            <a href="#/everyday"
                                 className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-2 rounded-lg shadow transition"
                                 aria-label="Explore Loan Categories"
                             >
@@ -121,7 +119,7 @@ export default function HomePage() {
                                 </p>
                                 <a
                                     className='mt-5 rounded-xl px-4 py-2 bg-purple-700 text-white hover:bg-purple-800 dark:bg-purple-300 dark:text-gray-900 dark:hover:bg-purple-400 transition'
-                                    href="/personalLoan"
+                                    href="#/personalLoan"
                                 >
                                     Try Now
                                 </a>
@@ -136,7 +134,7 @@ export default function HomePage() {
 
                                 <a
                                     className='mt-5 rounded-xl px-4 py-2 bg-purple-700 text-white hover:bg-purple-800 dark:bg-purple-300 dark:text-gray-900 dark:hover:bg-purple-400 transition'
-                                    href="/homeLoan"
+                                    href="#/homeLoan"
                                 >
                                     Try Now
                                 </a>

@@ -15,7 +15,7 @@ export default function Gst() {
     const [errors, setErrors] = useState({});
 
     const paths = [
-        { label: "Home", href: "/" },
+        { label: "Home", href: "#/" },
         { label: "Categories", href: "/categories" },
         { label: "GST", href: "/gstCalculator" },
     ];
@@ -50,7 +50,7 @@ export default function Gst() {
             <div className="w-full max-w-lg sm:max-w-md rounded-xl mt-8 shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center space-y-8">
 
                 {/* Logo / Header */}
-                <a href="/" className="mx-auto w-full flex items-center gap-3 group transition-all">
+                <a href="#/" className="mx-auto w-full flex items-center gap-3 group transition-all">
                     <span className="relative flex items-center">
                         <span className="rounded-full bg-purple-600 dark:bg-black/40 p-2 shadow-lg group-hover:scale-110 transition-transform">
                             <Calculator className="w-8 h-8 text-white dark:text-yellow-400 drop-shadow" />

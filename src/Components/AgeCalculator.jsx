@@ -45,7 +45,7 @@ export default function AgeCalculator() {
             <div className="max-w-lg w-full bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 space-y-6">
 
                 <a
-                    href="/"
+                    href="#/"
                     className="mx-auto w-full flex items-center gap-3 group transition-all"
                 >
                     <span className="relative flex items-center">

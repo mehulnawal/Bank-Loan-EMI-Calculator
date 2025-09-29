@@ -4,7 +4,7 @@ export default function CookiePolicy() {
     return (
         <div className="max-w-3xl mx-auto px-4 py-8">
 
-            <a href="/" className="flex items-center gap-3 group transition-all  mb-10 mx-auto w-full">
+            <a href="#/" className="flex items-center gap-3 group transition-all  mb-10 mx-auto w-full">
                 <span className="relative flex items-center">
                     <span className="rounded-full bg-white/20 p-2 shadow-lg group-hover:scale-110 transition-transform">
                         <Calculator className="w-8 h-8 text-white drop-shadow" />

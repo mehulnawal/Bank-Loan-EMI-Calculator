@@ -1,22 +1,23 @@
 import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function AdPlaceholder() {
     const adRef = useRef(null);
+    const location = useLocation(); // Track route changes
 
     useEffect(() => {
         if (adRef.current) {
             try {
                 (window.adsbygoogle = window.adsbygoogle || []).push({});
-                console.log('Ad pushed to adsbygoogle');
+                console.log('Ad pushed to adsbygoogle for route', location.pathname);
             } catch (e) {
-                console.error('Adsense error', e);
+                console.error('Adsense push error:', e);
             }
         }
-    }, []);
+    }, [location]); // refresh whenever route changes
 
     return (
         <div className="container mx-auto px-4 py-2">
-            {/* Google AdSense */}
             <ins
                 ref={adRef}
                 className="adsbygoogle block select-none"
@@ -32,18 +33,6 @@ export default function AdPlaceholder() {
                 data-ad-format="auto"
                 data-full-width-responsive="true"
             />
-
-            {/* Tailwind dark/light fallback box */}
-            {/* <div
-                className="
-                    w-full h-20 border border-dashed rounded 
-                    flex justify-center items-center select-none mt-2
-                    bg-gray-100 border-gray-400 text-gray-500
-                    dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400
-                "
-            >
-                Advertisement (Demo Preview)
-            </div> */}
         </div>
     );
 }

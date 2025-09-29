@@ -29,7 +29,7 @@ export default function Categories() {
 
                 {/* logo */}
                 <a
-                    href="/"
+                    href="#/"
                     className="mx-auto w-full flex items-center gap-3 group transition-all"
                 >
                     <span className="relative flex items-center">
@@ -87,7 +87,7 @@ export default function Categories() {
                         <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                             Accurately compute your personal loan EMIs and total payable amount to optimize your repayment strategy and budget effectively.
                         </p>
-                        <a href="/personalLoan" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
+                        <a href="#/personalLoan" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>
@@ -101,7 +101,7 @@ export default function Categories() {
                         <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                             Evaluate different home loan options, repayment tenures, and interest rates to plan for your ideal mortgage with confidence.
                         </p>
-                        <a href="/homeLoan" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
+                        <a href="#/homeLoan" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>
@@ -115,7 +115,7 @@ export default function Categories() {
                         <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                             Compute your car loan EMIs precisely and assess total repayment to make informed choices for your vehicle financing.
                         </p>
-                        <a href="/carLoan" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
+                        <a href="#/carLoan" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>
@@ -129,7 +129,7 @@ export default function Categories() {
                         <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                             Simplify your GST-related calculations for goods and services, ensuring tax compliance while managing your finances efficiently.
                         </p>
-                        <a href="/gstCalculator" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
+                        <a href="#/gstCalculator" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
                             Try Now →
                         </a>
                     </div>

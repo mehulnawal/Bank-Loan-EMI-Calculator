@@ -65,7 +65,7 @@ export default function PersonalLoan() {
 
                 {/* Logo / Header */}
                 <a
-                    href="/"
+                    href="#/"
                     className="mx-auto w-full flex items-center gap-3 group transition-all"
                 >
                     <span className="relative flex items-center">

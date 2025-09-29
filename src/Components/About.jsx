@@ -10,7 +10,7 @@ export default function AboutPage() {
     const { theme } = useContext(ThemeContext);
 
     const paths = [
-        { label: "Home", href: "/" },
+        { label: "Home", href: "#/" },
         { label: "About", href: "/about" }
     ];
 
@@ -64,7 +64,7 @@ export default function AboutPage() {
 
                 {/* logo */}
                 <a
-                    href="/"
+                    href="#/"
                     className="mx-auto w-full flex items-center gap-3 group transition-all"
                 >
                     <span className="relative flex items-center">
@@ -159,7 +159,7 @@ export default function AboutPage() {
                 {/* Call to Action */}
                 <div className="w-full text-center">
                     <a
-                        href="/categories"
+                        href="#/categories"
                         className="bg-purple-600 hover:bg-purple-700 text-white font-medium px-10 py-4 rounded-lg shadow transition inline-block text-lg"
                         aria-label="Start using EMI calculators"
                     >

@@ -32,7 +32,7 @@ export default function Footer() {
                         <ul className="space-y-2">
                             <li>
                                 <a
-                                    href="/"
+                                    href="#/"
                                     className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
                                 >
                                     Home
@@ -41,7 +41,7 @@ export default function Footer() {
 
                             <li>
                                 <a
-                                    href="/aboutUs"
+                                    href="#/aboutUs"
                                     className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-lg`}
                                 >
                                     About Us
@@ -58,7 +58,7 @@ export default function Footer() {
                         <ul className="space-y-2">
                             <li>
                                 <a
-                                    href="/terms-of-service"
+                                    href="#/terms-of-service"
                                     className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
                                 >
                                     Terms Of Service
@@ -66,7 +66,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/privacyPolicy"
+                                    href="#/privacyPolicy"
                                     className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
                                 >
                                     Privacy Policy
@@ -74,7 +74,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/cookie"
+                                    href="#/cookie"
                                     className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
                                 >
                                     Cookie Policy
@@ -82,7 +82,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/disclaimer"
+                                    href="#/disclaimer"
                                     className={`${theme === 'light' ? 'text-gray-600 hover:text-gray-800' : 'text-gray-400 hover:text-gray-200'} transition-colors text-sm`}
                                 >
                                     Disclaimer
