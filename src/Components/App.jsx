@@ -21,12 +21,15 @@ import RandomNumberGenerator from './RandomNumber';
 import PrivacyPolicy from './Privacy';
 import CookiePolicy from './Cookie';
 import { Demo } from './demo';
+import ScrollToTop from './ScrollToTop';
 
 
 export default function App() {
   return (
     <ThemeProvider>
       <HashRouter>
+
+        <ScrollToTop />
 
         <Routes>
           <Route index element={<HomePage />} />
